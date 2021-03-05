@@ -1,710 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-   <meta charset="UTF-8">
-   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>Home| Dark Engines</title>
-   <link rel="stylesheet" href="../Styles/Home.PAGE.css">
-   <link rel="icon" href="../Assets/Images/Logos/Dark Engine -logos.jpeg">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DARK EnGINES</title>
+    <link rel = "icon" href="../Assets/Images/Logos/Dark Engine -logos.jpeg"> 
+    <link rel="stylesheet" href="../Styles/Broken-link.CSS">
 
 </head>
-
 <body>
 
 
 
-   <!--            *========*            *******<<<===  Top section "header"   ====>>>*********                           *========*                         -->
-
-
-   <header>
-
-      <img id="Logo" src="../Assets/Images/Logos/Dark Engine -logos.jpeg" alt="Company logo Dark Engines" height="75%"
-         width=auto />
-      <h1 id="Logo-text">Dark Engines </h1>
-      <h3 id="say-Title"> You Create Your Own World 🌎 <p id="Move-inside"> your privacy</p>
-      </h3>
-
-      <img id="and1" src="../Assets/Images/Icons/And-AI-ICONHome.png" alt="and icon ">
-
-      <p id="Short-title"> Get linked to the most peopler <br>
-         and <b>"SAFE🔒"</b> online magazine <br>
-         We would love to be the <br> best solution for you!! 😊💛 </p>
-
-
-
-      <!-- Navigation bar  --->
-      <nav id="home-nav">
-         <a title="You are already in!😃" class="CLICKED-HiGHLIGHT" href="./index.html">HOME</a>
-         <a href="./Broken-link.html"> Topics</a>
-         <a href="./Broken-link.html">Initiatives</a>
-         <a href="./Broken-link.html">Media</a>
-         <a href="./Stories-daily.html">Stories</a>
-
-
-      </nav>
-
-   </header>
-
-
-   <!--here is Start of login Form Code ------------------------------------------------------------------------------------------------------------------------------------------------->
-
-   <input type="checkbox" id="show-log" hidden>
-
-   <!-- when this check box checked = true will display the form * if not will display none
-                           by clicking on login btn will display the form .. on X "Bowtie sign " will close . <<<even if the user click again on login btn will close it so i will hide it>>> '  the idea of check box just TODO: to make a condition without using JS" "-->
-
-   <!--I did use label over here because the button/span does not have <<for="element/ methed">> -->
-
-
-
-   <label for="show-log" id="login-PopUp"> LOGIN</label>
-
-   <Form id="LOGIN-FORM1" action="">
-
-
-      <img id="Logo-Gif" src="../Assets/Images/Logos/world streem.gif" alt="">
-
-
-
-      <div id="form-all">
-
-         <label id="btn-close-log" style='font: size 200px; ' type="button" for="show-log"> &#8904; </label>
-
-         <label class="title">LOGIN INTO 🔒<br> DARK ENGINES </label>
-
-         <label id="email-text"> <br><!-- this br to make the email go to down --> Email or Phone NO.</label>
-
-         <input id="input-email" type="text" placeholder=" email2021@example" required>
-
-
-         <label id="password"> Password</label>
-
-         <input id="input-password" type="password" required>
-
-
-         <button id="login-btn" type="submit"> LOGIN </button>
-
-         <a id="Forgot" href="#"> <br> Forgot password? </a>
-         <h3 id="signup-donot"> Do not have an account! <a href="#SignUp-PopUp"> Sign Up </a> </h3>
-
-      </div>
-
-   </Form>
-   <!--here is the end of login Form -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
-
-
-   <!--  <sign up>  -->
-   <input type="checkbox" id="show-sign" hidden>
-
-   <label for="show-sign" id="SignUp-PopUp"> SIGN UP</label>
-
-   <Form id="SIGN-UP-FORM" action="">
-
-
-      <img id="sign-up-Gif" src="../Assets/Images/Logos/world streem0.gif" alt="dark engines logo ">
-
-
-
-      <div id="form-all-sign-up">
-
-         <label id="btn-close-sign-up" style='font: size 200px; ' type="button" for="show-sign"> &#8904; </label>
-
-         <label class="title">SIGN UP INTO 🔒<br> DARK ENGINES </label>
-         <h3 id="name-label">Name </h3>
-         <div id="F-L-Name">
-            <label id="First-name"> First</label>
-
-            <input id="input-FName" type="text" placeholder=" John" required>
-
-
-            <label id="last-name"> Last </label>
-
-            <input id="input-LName" type="text" placeholder=" muller" required>
-
-         </div>
-
-         <div id="User-Email-Name-Password">
-
-            <label id="User-name"> User Name</label>
-
-            <input id="input-User-Name" type="text" placeholder=" @ John1_1Muller" required>
-
-            <label id="email-text-sign-up"> Email or Phone NO.</label>
-
-            <input id="input-email-sign-up" type="text" placeholder=" email2021@example" required>
-
-
-            <label id="password-sign-up"> Password</label>
-
-            <input id="input-password-sign-up" type="password" required>
-            <input id="input-password-sign-up-re" type="password" required placeholder=" re-confirm please ">
-
-         </div>
-
-         <button id="Sign-up-btn" type="submit" for="show-sign"> <a href="mailto:John.Mollere21541@mcast.edu.mt"> SIGN
-               UP </a> </button>
-
-      </div>
-
-   </Form>
-   <!--here is the end of sign up Form -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
-
-
-
-
-
-
-
-
-
-   <!--    <=*******************=>       <<<<<<<<<<<<<<<<SIDE NAVIGATION BAR>>>>>>>>>>>>>>>>>>>>>>>>>           <==*****************************==> -->
-
-
-   <aside id="Nav-Fixed-Side">
-      <a title="Go to home" href="./index.html"> <img id="head-Logo" src="../Assets/Images/Logos/Dark Engine Trans.png"
-            height="100px" width="auto"> </a>
-
-      <form id="form-search-nav1">
-         <input id="Input-Search-nav1" type="search" placeholder="How Can I Help You?!😊">
-         <img id="Search-icon-nav" src="../Assets/Images/Icons/Search blue.png">
-      </form>
-
-
-
-      <a title="Needs Some Help!😃" href="./supportPage.html" target="blank">
-         <!--<B id="B-ST">Support</B>--> <img id="Go-support-nav"
-            src="../Assets/Images/Icons/interactive with/Support.icon.png" height="100px" width="auto">
-      </a>
-      <a title="You are already in!😃" href="./index.html">
-         <!--<B id="B-HE" >Home</B>--> <img id="Go-home-nav"
-            src="../Assets/Images/Icons/interactive with/home-page-color.png" height="100px" width="auto">
-      </a>
-      <!--TODO:this  two text i have hide it Temporary -->
-   </aside>
-
-   <!-- *************************************************************************************************************** -->
-
-
-
-
-
-
-
-
-   <!--            *========*            *******<<<===  Top Stories class right Side   ====>>>*********                           *========*                         -->
-
-
-
-   <Section class="right-Section-Top-Srories">
-      <!-- View all stories link  -->
-      <a title="View all stories in stories page " id="Stories-link" href="./Stories-daily.html"> View All Stories </a>
-      <!-- Top Stories header  -->
-      <h1 id="Top-Stories-h1"> TOP STORIES </h1>
-
-      <!-- Author 1 -->
-      <div id="Author1-top-stories" class="authors-Home-Top-Stories">
-
-         <!-- This is profile Author picture -->
-         <img id="Profile-picture1" class="Authors-Profile-picture" src="../Assets/John Muller.jpg"
-            alt="#User-Name Profile Picture" height="250px" width="175px">
-
-         <!-- this is the Author post/Story img -->
-         <img id="Profile-Story-img1" class="Authors-Stories-img" src="../Assets/John Dark2.jpg"
-            alt="#User-Name Profile Picture" height="350px" width="400px">
-
-
-         <h2 id="Author1-Name" class="Authors-Name">
-            John Muller
-         </h2>
-
-         <h4 id="DateTimeU1" class="DateTimeAuthors">
-
-            Thursday 4:50Am 18 Feb 2021
-
-         </h4>
-
-
-         <p id="Author1Para" class="Authors-Paragraphs">
-
-            <b> This is title </b> <br>
-            This is body Lorem ipsum dolor sit amet <br>
-            adipisicing elit. Fuga nulla vel error? <br>
-            This is body Lorem ipsum dolor sit amet <br>
-            adipisicing elit. Fuga nulla vel error? <br>
-            This is body Lorem ipsum dolor sit amet <br>
-            adipisicing elit. Fuga nulla vel error? <br>
-
-         </p>
-
-         <ul id="Tags-list-1" class="Authors-Tags-list">
-            <b id="Tags-B"> Tags </b>
-
-            <li> #lorem Lorem. </li>
-            <li> #lorem Lorem. </li>
-            <li> #lorem Lorem. </li>
-         </ul>
-
-      </div>
-      <hr>
-
-
-
-
-
-      <!-- Author 2 -->
-      <div id="Author2-top-stories" class="authors-Home-Top-Stories">
-         <!-- This is profile Author picture -->
-         <img id="Profile-picture2" class="Authors-Profile-picture"
-            src="../Assets/Images/Free to use good and  fashion/user3.jpg" alt="#User-Name Profile Picture"
-            height="250px" width="175px">
-
-         <!-- this is the Author post/Story img -->
-         <img id="Profile-Story-img2" class="Authors-Stories-img"
-            src="../Assets/Images/Free to use good and  fashion/user4.jpg" alt="#User-Name Profile Picture"
-            height="350px" width="400px">
-         <h2 id="Author2-Name" class="Authors-Name">
-
-            Joyce Muller
-         </h2>
-
-         <h4 id="DateTimeU2" class="DateTimeAuthors">
-
-            Thursday 4:50Am 18 Feb 2021
-
-         </h4>
-
-
-         <p id="Author2Para" class="Authors-Paragraphs">
-
-            <b> This is title </b> <br>
-            This is body Lorem ipsum dolor sit amet <br>
-            adipisicing elit. Fuga nulla vel error? <br>
-            This is body Lorem ipsum dolor sit amet <br>
-            adipisicing elit. Fuga nulla vel error? <br>
-            This is body Lorem ipsum dolor sit amet <br>
-            adipisicing elit. Fuga nulla vel error? <br>
-
-         </p>
-
-         <ul id="Tags-list-2" class="Authors-Tags-list">
-            <b id="Tags-B"> Tags </b>
-
-            <li> #lorem Lorem. </li>
-            <li> #lorem Lorem. </li>
-            <li> #lorem Lorem. </li>
-         </ul>
-
-      </div>
-      <hr id="hr2">
-
-
-
-
-
-      <!-- Author 3 -->
-      <div id="Author3-top-stories" class="authors-Home-Top-Stories">
-
-         <!-- This is profile Author picture -->
-         <img id="Profile-picture3" class="Authors-Profile-picture"
-            src="../Assets/Images/Free to use good and  fashion/user5.jpg" alt="#User-Name Profile Picture"
-            height="250px" width="175px">
-
-         <!-- this is the Author post/Story img -->
-         <img id="Profile-Story-img3" class="Authors-Stories-img"
-            src="../Assets/Images/Free to use good and  fashion/user6.jpg" alt="#User-Name Profile Picture"
-            height="350px" width="400px">
-
-         <h2 id="Author3-Name" class="Authors-Name">
-
-            Jody Muller
-         </h2>
-
-         <h4 id="DateTimeU3" class="DateTimeAuthors">
-
-            Thursday 4:50Am 18 Feb 2021
-
-         </h4>
-
-
-         <p id="Author3Para" class="Authors-Paragraphs">
-
-            <b> This is title </b> <br>
-            This is body Lorem ipsum dolor sit amet <br>
-            adipisicing elit. Fuga nulla vel error? <br>
-            This is body Lorem ipsum dolor sit amet <br>
-            adipisicing elit. Fuga nulla vel error? <br>
-            This is body Lorem ipsum dolor sit amet <br>
-            adipisicing elit. Fuga nulla vel error? <br>
-
-         </p>
-
-         <ul id="Tags-list-3" class="Authors-Tags-list">
-            <b id="Tags-B"> Tags </b>
-
-            <li> #lorem Lorem. </li>
-            <li> #lorem Lorem. </li>
-            <li> #lorem Lorem. </li>
-         </ul>
-      </div>
-      <hr id="hr3">
-
-
-
-
-      <!-- Author 4-->
-      <div id="Author4-top-stories" class="authors-Home-Top-Stories">
-
-         <!-- This is profile Author picture -->
-         <img id="Profile-picture4" class="Authors-Profile-picture"
-            src="../Assets/Images/Free to use good and  fashion/user5.jpg" alt="#User-Name Profile Picture"
-            height="250px" width="175px">
-
-         <!-- this is the Author post/Story img -->
-         <img id="Profile-Story-img4" class="Authors-Stories-img"
-            src="../Assets/Images/Free to use good and  fashion/user6.jpg" alt="#User-Name Profile Picture"
-            height="350px" width="400px">
-
-         <h2 id="Author4-Name" class="Authors-Name">
-
-            Jolley Muller
-         </h2>
-
-         <h4 id="DateTimeU4" class="DateTimeAuthors">
-
-            Thursday 4:50Am 18 Feb 2021
-
-         </h4>
-
-
-         <p id="Author4Para" class="Authors-Paragraphs">
-
-            <b> This is title </b> <br>
-            This is body Lorem ipsum dolor sit amet <br>
-            adipisicing elit. Fuga nulla vel error? <br>
-            This is body Lorem ipsum dolor sit amet <br>
-            adipisicing elit. Fuga nulla vel error? <br>
-            This is body Lorem ipsum dolor sit amet <br>
-            adipisicing elit. Fuga nulla vel error? <br>
-
-         </p>
-
-         <ul id="Tags-list-4" class="Authors-Tags-list">
-            <b id="Tags-B"> Tags </b>
-
-            <li> #lorem Lorem. </li>
-            <li> #lorem Lorem. </li>
-            <li> #lorem Lorem. </li>
-         </ul>
-
-      </div>
-      <hr id="hr4">
-
-
-      <!-- Author 5 -->
-      <div id="Author5-top-stories" class="authors-Home-Top-Stories">
-
-         <!-- This is profile Author picture -->
-         <img id="Profile-picture5" class="Authors-Profile-picture"
-            src="../Assets/Images/Free to use good and  fashion/user5.jpg" alt="#User-Name Profile Picture"
-            height="250px" width="175px">
-
-         <!-- this is the Author post/Story img -->
-         <img id="Profile-Story-img5" class="Authors-Stories-img"
-            src="../Assets/Images/Free to use good and  fashion/user6.jpg" alt="#User-Name Profile Picture"
-            height="350px" width="400px">
-
-         <h2 id="Author5-Name" class="Authors-Name">
-
-            Jesus daily Story
-         </h2>
-
-         <h4 id="DateTimeU5" class="DateTimeAuthors">
-
-            Thursday 4:50Am 18 Feb 2021
-
-         </h4>
-
-
-         <p id="Author5Para" class="Authors-Paragraphs">
-
-            <b> This is title </b> <br>
-            This is body Lorem ipsum dolor sit amet <br>
-            adipisicing elit. Fuga nulla vel error? <br>
-            This is body Lorem ipsum dolor sit amet <br>
-            adipisicing elit. Fuga nulla vel error? <br>
-            This is body Lorem ipsum dolor sit amet <br>
-            adipisicing elit. Fuga nulla vel error? <br>
-
-            <p />
-
-         <ul id="Tags-list-5" class="Authors-Tags-list">
-            <b id="Tags-B"> Tags </b>
-
-            <li> #lorem Lorem. </li>
-            <li> #lorem Lorem. </li>
-            <li> #lorem Lorem. </li>
-         </ul>
-      </div>
-      <hr id="hr5">
-
-
-
-      <!-- Author 6 -->
-      <div id="Author6-top-stories" class="authors-Home-Top-Stories">
-
-         <!-- This is profile Author picture -->
-         <img id="Profile-picture3" class="Authors-Profile-picture"
-            src="../Assets/Images/Free to use good and  fashion/user5.jpg" alt="#User-Name Profile Picture"
-            height="250px" width="175px">
-
-         <!-- this is the Author post/Story img -->
-         <img id="Profile-Story-img3" class="Authors-Stories-img"
-            src="../Assets/Images/Free to use good and  fashion/user6.jpg" alt="#User-Name Profile Picture"
-            height="350px" width="400px">
-
-         <h2 id="Author6-Name" class="Authors-Name">
-
-            World news
-         </h2>
-
-         <h4 id="DateTimeU6" class="DateTimeAuthors">
-
-            Thursday 4:50Am 18 Feb 2021
-
-         </h4>
-
-
-         <p id="Author6Para" class="Authors-Paragraphs">
-
-            <b> This is title </b> <br>
-            This is body Lorem ipsum dolor sit amet <br>
-            adipisicing elit. Fuga nulla vel error? <br>
-            This is body Lorem ipsum dolor sit amet <br>
-            adipisicing elit. Fuga nulla vel error? <br>
-            This is body Lorem ipsum dolor sit amet <br>
-            adipisicing elit. Fuga nulla vel error? <br>
-
-         </p>
-
-         <ul id="Tags-list-6" class="Authors-Tags-list">
-            <b id="Tags-B"> Tags </b>
-
-            <li> #lorem Lorem. </li>
-            <li> #lorem Lorem. </li>
-            <li> #lorem Lorem. </li>
-         </ul>
-      </div>
-      <hr id="hr6">
-
-
-
-
-
-      <!-- Author 7 -->
-      <div id="Author7-top-stories" class="authors-Home-Top-Stories">
-
-         <!-- This is profile Author picture -->
-         <img id="Profile-picture7" class="Authors-Profile-picture"
-            src="../Assets/Images/Free to use good and  fashion/user5.jpg" alt="#User-Name Profile Picture"
-            height="250px" width="175px">
-
-         <!-- this is the Author post/Story img -->
-         <img id="Profile-Story-img7" class="Authors-Stories-img"
-            src="../Assets/Images/Free to use good and  fashion/user6.jpg" alt="#User-Name Profile Picture"
-            height="350px" width="400px">
-
-         <h2 id="Author7-Name" class="Authors-Name">
-
-            Milica Jaslar
-         </h2>
-
-         <h4 id="DateTimeU3" class="DateTimeAuthors">
-
-            Thursday 4:50Am 18 Feb 2021
-
-         </h4>
-
-
-         <p id="Author7Para" class="Authors-Paragraphs">
-
-            <b> This is title </b> <br>
-            This is body Lorem ipsum dolor sit amet <br>
-            adipisicing elit. Fuga nulla vel error? <br>
-            This is body Lorem ipsum dolor sit amet <br>
-            adipisicing elit. Fuga nulla vel error? <br>
-            This is body Lorem ipsum dolor sit amet <br>
-            adipisicing elit. Fuga nulla vel error? <br>
-
-         </p>
-
-         <ul id="Tags-list-7" class="Authors-Tags-list">
-            <b id="Tags-B"> Tags </b>
-
-            <li> #lorem Lorem. </li>
-            <li> #lorem Lorem. </li>
-            <li> #lorem Lorem. </li>
-         </ul>
-
-      </div>
-      <hr id="hr7">
-
-
-
-      <!-- Author 8 -->
-      <div id="Author8-top-stories" class="authors-Home-Top-Stories">
-
-         <!-- This is profile Author picture -->
-         <img id="Profile-picture8" class="Authors-Profile-picture"
-            src="../Assets/Images/Free to use good and  fashion/user5.jpg" alt="#User-Name Profile Picture"
-            height="250px" width="175px">
-
-         <!-- this is the Author post/Story img -->
-         <img id="Profile-Story-img8" class="Authors-Stories-img"
-            src="../Assets/Images/Free to use good and  fashion/user6.jpg" alt="#User-Name Profile Picture"
-            height="350px" width="400px">
-
-         <h2 id="Author8-Name" class="Authors-Name">
-
-            John Dark
-         </h2>
-
-         <h4 id="DateTimeU8" class="DateTimeAuthors">
-
-            Thursday 4:50Am 18 Feb 2021
-
-         </h4>
-
-
-         <p id="Author8Para" class="Authors-Paragraphs">
-
-            <b> This is title </b> <br>
-            This is body Lorem ipsum dolor sit amet <br>
-            adipisicing elit. Fuga nulla vel error? <br>
-            This is body Lorem ipsum dolor sit amet <br>
-            adipisicing elit. Fuga nulla vel error? <br>
-            This is body Lorem ipsum dolor sit amet <br>
-            adipisicing elit. Fuga nulla vel error? <br>
-
-         </p>
-
-         <ul id="Tags-list-8" class="Authors-Tags-list">
-            <b id="Tags-B"> Tags </b>
-
-            <li> #lorem Lorem. </li>
-            <li> #lorem Lorem. </li>
-            <li> #lorem Lorem. </li>
-         </ul>
-      </div>
-      <hr id="hr8">
-
-
-
-
-      <!-- Author 9 -->
-      <div id="Author9-top-stories" class="authors-Home-Top-Stories">
-
-         <!-- This is profile Author picture -->
-         <img id="Profile-picture9" class="Authors-Profile-picture"
-            src="../Assets/Images/Free to use good and  fashion/user5.jpg" alt="#User-Name Profile Picture"
-            height="250px" width="175px">
-
-         <!-- this is the Author post/Story img -->
-         <img id="Profile-Story-img9" class="Authors-Stories-img"
-            src="../Assets/Images/Free to use good and  fashion/user6.jpg" alt="#User-Name Profile Picture"
-            height="350px" width="400px">
-
-         <h2 id="Author9-Name" class="Authors-Name">
-
-            Dark Engines
-         </h2>
-
-         <h4 id="DateTimeU9" class="DateTimeAuthors">
-
-            Thursday 4:50Am 18 Feb 2021
-
-         </h4>
-
-
-         <p id="Author9Para" class="Authors-Paragraphs">
-
-            <b> This is title </b> <br>
-            This is body Lorem ipsum dolor sit amet <br>
-            adipisicing elit. Fuga nulla vel error? <br>
-            This is body Lorem ipsum dolor sit amet <br>
-            adipisicing elit. Fuga nulla vel error? <br>
-            This is body Lorem ipsum dolor sit amet <br>
-            adipisicing elit. Fuga nulla vel error? <br>
-
-         </p>
-
-         <ul id="Tags-list-9" class="Authors-Tags-list">
-            <b id="Tags-B"> Tags </b>
-
-            <li> #lorem Lorem. </li>
-            <li> #lorem Lorem. </li>
-            <li> #lorem Lorem. </li>
-
-         </ul>
-      </div>
-      <hr id="hr9">
-
-   </Section>
-
-   <!-- *************************************************************************************************************** -->
-
-
-
-
-
-
-
-   <!--            *========*            *******<<<===  Footer section bottom Side   ====>>>*********                           *========*                         -->
-
-
-   <footer>
-
-
-      <p id="p-footer">
-         <a title="Check out our Terms And Conditions !😃🌍" href="./TermsAndConditions.html"
-            class="C-footer">Terms&Conditions</a>
-         <a title="Check out our privacy and policy !😃🌍" href="./PrivacyAndPolicy .html" class="C-footer"> Policy </a>
-         <a title="Needs Some Help !😃🌍 " href="./supportPage.html" class="C-footer">Support</a>
-         Copyright&copy;John Muller 2020-21
-         <a title="get o know more about us" href="./AboutUs.html" class="C-footer">About</a>
-      </p>
-
-
-
-      <div id="Follow-us">
-         <a target="blank" title="Follow us on Facebook "
-            href="https://www.facebook.com/profile.php?id=100051966891971"> <img class="Social-US"
-               src="../Assets/Images/Icons/Facebook-icon.png" alt="Facebook icon" height="80px" width="auto"> </a>
-         <a target="blank" title="Follow us on youtube " href="https://www.youtube.com/"> <img class="Social-US"
-               src="../Assets/Images/Icons/Youtube icon.png" alt="youtube icon" height="80px" width="auto"> </a>
-         <a target="blank" title="Follow us on instagram " href="https://www.instagram.com/1johndark/"> <img
-               class="Social-US" src="../Assets/Images/Icons/iconfinder_instagram_1632517.png" alt="instagram icon"
-               height="80px" width="auto"> </a>
-         <a target="blank" title="Follow us on twitter " href="https://twitter.com/john_m_youssef"> <img
-               class="Social-US" src="../Assets/Images/Icons/Twitter_colored.png" alt="Twitter icon" height="80px"
-               width="auto"> </a>
-         <a target="blank" title="Email us for feedback  " href="mailto:John.Muller8000@gmail.com"> <img
-               class="Social-US" src="../Assets/Images/Icons/112-gmail_email_mail-256.webp" alt="Gmail icon"
-               height="80px" width="auto"> </a>
-         <a target="blank" title="Follow us on linked " href="https://www.linkedin.com/in/john-dark-1871581a6/"> <img
-               class="Social-US" src="../Assets/Images/Icons/LinkedIn-512 Icon.png" alt="linkedin icon" height="80px"
-               width="auto"> </a>
-
-         <h4 id="copy">&copy;Copyright Dark Engines 2020-21. All Rights Reserved </h4>
-         <h4 id="powered"> Powered By Dark Engines 2020-21</h4>
-
-      </div>
-      
-   </Footer>
-
-
-
-   </head>
-
-   <body>
+    <style>
+
+*{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 28px;
+
+}
+body{
+    padding: 0 0;
+    margin: 0em;
+    background-image: url(../Assets/Images/Logos/Broken-link-page1.gif);
+    background-repeat: no-repeat;
+    background-size: 150vh;    
+    color: #6b2dc0;}
+
+h1{
+    position: absolute;
+    right: 1.8em;
+    top: 2em;
+    font-size: 105px;
+    
+}
+h3{
+    position: absolute;
+    right :1em;
+    top: 14.5em;
+}
+
+b{  /*this strong just i used to push the bottom line inside a bit */
+    position: relative;
+    left: 5em;
+}
+#Go-Home{
+    text-decoration: none;
+    color: #6b2dc0;
+    position: absolute;
+    font-size: 38px;
+    font-weight: 900;
+    border: 5px #6b2dc0 solid;
+    border-radius: 50px;
+    background-color: #d6e1ff; 
+    padding: 1.8px 15px;
+    right: 8em;
+    top: 15em;
+    box-shadow: 2px 3px silver;
+    transition: all 1.2s;
+}
+#Go-Home:hover{
+    color:  #d6e1ff;
+    border-color: #d6e1ff;
+    background: #6b2dc0;
+    box-shadow: none;
+    font-size: 37.9px;
+    transition: all 1s;
+    
+
+}
+
+    </style>
+        <!-- <img id="img-broken-link" src="../Assets/Images/Logos/Broken-link-page.gif" alt="broken link 404 gif Image"> -->
+
+            
+                  <h1> OoPs!...  </h1>
+                  <h3> We're sorry we couldn't find the page you are looking for
+                      <br> <b> maybe you clicked on a broken link </b> </h3>
+                  <a href="./Pages/index.html" id="Go-Home" >  Go Home  </a>
+            
+
+</body>
+</html>
