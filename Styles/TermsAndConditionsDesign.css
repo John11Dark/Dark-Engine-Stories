@@ -1,0 +1,339 @@
+@import url('https://fonts.googleapis.com/css2?family=Hammersmith+One&display=swap');
+
+
+
+*{
+
+    font-size: 30px;
+    line-height: 50px;
+    margin: 0;
+    padding: 0px 0px ;
+    box-sizing: border-box;
+    font-family: 'Hammersmith One', sans-serif;
+    
+
+}
+body{
+    background-size: cover;
+    background: radial-gradient(  white , #f2f3f8, #f2f3f8 , white ,#f2f3f8 ) no-repeat center;
+}
+a {    text-decoration: none ;
+}
+
+
+header{
+    background: transparent;
+    align-items: center;
+    display: inline-flex;
+    position: fixed;
+    justify-content: space-between;
+    font-size: 35px;
+    font-weight: 650;
+    color: black;
+    width: 101%;
+    opacity: .1;
+    transition: all 2.5s;
+    z-index: 1;
+
+}
+header:hover{
+    opacity: .95;
+}
+
+#HeadLogoh1{
+    position: relative;
+    top: 20px;
+    font-size: 51px;
+    font-weight: bolder;
+    color: rgb(0, 0, 0); 
+    -webkit-text-stroke:  rgb(250, 196, 96)  0.9px;
+}
+
+nav{ 
+    background: transparent;
+    margin-right: auto;
+    display:flex;
+    padding: 5px 50px ;
+    justify-content: space-between;
+       
+}
+nav a{
+    color: black;
+    align-items: center;
+    justify-items: space-between;
+    justify-content: space-between;
+    margin-left: 1em;
+    margin-right: 1em;
+}
+
+nav a:hover{
+    text-shadow: 3px 3.5px lightblue;
+    position: relative;
+    top: 5px;
+    left: 2px;
+    color:  rgb(250, 196, 96) ; 
+}
+
+#Active-now{
+    color: #fac460;
+    text-shadow: 4px 10px  black ;
+}
+
+#Active-now:hover{
+    color: green;
+    text-shadow: none;
+}
+
+#contact-us { 
+    margin-right: .95em;
+    margin-bottom: .5em;
+    width: auto;
+    height: 80px;
+    border: thin rgb(133, 131, 131) solid;
+    font-weight: 900;
+    cursor: pointer;
+    font-size: 38px;  
+    border-radius: 20px;  
+    background:rgb(250, 196, 96) ; 
+    outline: none;
+    box-shadow: 2px 2px #000000;
+    text-shadow: 1px 1px black;
+}
+#contact-us:hover {
+    color:  rgb(250, 196, 96) ; 
+
+    background: cornsilk;
+    text-shadow: 3px 3px black;
+
+}
+
+
+#top-img{
+    transform: translateX(-5%); /* i used translate here because i can not change the image hight */
+    width: 125%;
+    top: 100vh;
+}
+
+.top-title-h1{  /*  This all {H1} -s design */
+    font-size: 55px;
+    text-shadow: 3px 3px rgb(250, 196, 96);
+    transform: translate(40% , 55%);
+
+}
+
+.tearmsAndConditionsPara{  /*  This all paragraphs design */
+    position: relative;
+    top: 350px;
+    margin: 5em;
+    
+}
+
+.Center-img{  /*  This all centered images design */
+    position: absolute;
+    width: 50%;
+    transform: translate(120% , 55%);
+    
+}
+section h2 {
+    font-size: 39px;
+}
+li b{
+    font-size: 29.5px;
+   color:  #fac460;
+} 
+/* Starter section */
+#Hint-top-h1{
+    position: relative;
+    top: 100px;
+    left: 10px;
+    font-size: 42px;
+    color: lightgreen;
+}
+#Hint-top-p{
+    position: relative;
+    top: 120px;
+    left: 500px;
+    font-size: 39px;
+    align-items: center;
+    justify-content: center;
+}
+
+#Top-privacy{ /*img*/
+    position: relative;
+    top: 300px;
+}
+
+/* intro section */
+
+
+#Introductions{
+position: relative;
+top: 350px;
+}
+
+
+#Introductions-img1{
+   transform: translateY( 30%);
+}
+
+/* lorem section */
+
+#Lorem-termsandconditions{ /*h1*/
+
+position: relative;
+top:325px;
+color: rgb(32, 120, 178);
+}
+
+#lorem-img-C{/*img*/
+transform: translateY(12%);
+}
+#lorem-img{
+    position: absolute;
+    top: -15em;
+}
+
+/* Copy rights Section*/
+#user-Copy-rights-h1{ 
+    transform: translate(43% , 800%);
+    }
+    
+    #CopyR-by-user-img{ /*img*/
+    transform: translateY(30%);
+    
+    }
+    #CopyR-PRIVACY-C{/*center img*/
+    position: absolute;
+    top: -300px;
+    
+    }
+
+/* e-commerce Section*/
+#e-commerce-user-h1{ 
+transform: translate(22%, 800%);
+
+}
+
+#e-commerce-user-img{ 
+transform: translateY(24%);
+
+
+}
+
+#e-commerce-TERMS-C{/*center img*/
+    position: absolute;
+    top: -250px;
+    
+    }
+
+
+
+
+#bottom{
+    transform: translate(19%, 30%);
+}
+
+#fotter3{ /*img gif */
+transform: translateY(20%);
+}
+#bottom b {
+     font-weight: bolder;
+    font-size: 60px;
+    color: red;
+
+}
+#footer-img1{
+    position: relative;
+    top: -100px;
+    left: 550px;
+}
+
+/*footer */
+
+
+footer{
+    transform: translateY(1%);
+    border: thick solid lightgray;
+    background-color: brown;
+    width: 100%;
+    height: 9em;
+    color: #fac460;
+    font-weight: 800;
+
+
+
+
+}
+
+#Go-to-Top{
+    position: absolute;
+    top: -7em;
+    left: 26em;
+    height: 200px;
+    width: auto;
+
+}   
+#Go-to-Top:hover{
+    position: absolute;
+    top: -8em;
+    transition: all  2s;
+} 
+
+
+footer p {
+    position: relative;
+    top: 10px;
+    left: 350px;
+    font-size: 28px;
+    
+}
+
+.C-footer {
+    color: rgb(33, 168, 231);
+}   
+
+#p-footer :hover{
+    color: rgb(250, 196, 96);
+    text-shadow: 3px 3.5px black;
+    font-size: 30px;
+    position: relative;
+    top: 10px;
+}
+
+#Follow-us {
+    
+    font-size: 19px;
+    position: absolute;
+    top: 3em;
+    left: 36em;
+    color:var(--Text-Color-h1);
+}
+
+.Social-US { 
+    height: 60px;
+    position: relative;
+    top: 30px;
+    left: 50px;
+    
+}
+
+
+ #copy{
+    position: relative;
+    right: 20px;   
+    top: 35px;
+    font-size: 23px;
+    color: gray;
+
+}
+
+#powered{
+    position: relative;
+    left: 5em;
+    color: gray;
+    font-size: 22px;
+    top: 30px;
+} 
+
+
+ 

@@ -1,0 +1,55 @@
+*{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 28px;
+
+}
+body{
+    padding: 0 0;
+    margin: 0em;
+    background-image: url(../Assets/Images/Logos/Broken-link-page1.gif);
+    background-repeat: no-repeat;
+    background-size: 150vh;    
+    color: #6b2dc0;}
+
+h1{
+    position: absolute;
+    right: 1.8em;
+    top: 2em;
+    font-size: 105px;
+    
+}
+h3{
+    position: absolute;
+    right :1em;
+    top: 14.5em;
+}
+
+b{  /*this strong just i used to push the bottom line inside a bit */
+    position: relative;
+    left: 5em;
+}
+#Go-Home{
+    text-decoration: none;
+    color: #6b2dc0;
+    position: absolute;
+    font-size: 38px;
+    font-weight: 900;
+    border: 5px #6b2dc0 solid;
+    border-radius: 50px;
+    background-color: #d6e1ff; 
+    padding: 1.8px 15px;
+    right: 8em;
+    top: 15em;
+    box-shadow: 2px 3px silver;
+    transition: all 1.2s;
+}
+#Go-Home:hover{
+    color:  #d6e1ff;
+    border-color: #d6e1ff;
+    background: #6b2dc0;
+    box-shadow: none;
+    font-size: 37.9px;
+    transition: all 1s;
+    
+
+}

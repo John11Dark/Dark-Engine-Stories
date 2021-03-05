@@ -1,0 +1,1056 @@
+@import url('https://fonts.googleapis.com/css2?family=Hammersmith+One&display=swap');
+
+
+    /* This positions and styles on screen size 1920 * 911 ratio 16/9 */
+
+:root{
+    --Desktop:(1920px);
+    --laptop:(991px);
+    --Text-Color-h1: #202020;
+    --Text-Color-g: #707070;
+    --Text-Color-a: #ddeffd;
+    --Text-Color-y: #FFDF6C;
+    --Text-Color-ba: #229151;
+    --Text-Color-g-h: #833820;
+    --Text-color-g-p: #CE6949;
+    --Text-Color-Le:  lemonchiffon;
+    --Text-color-g-p-f: #c03d3d;
+    --Back-Color-Blue: rgb(214, 239, 252);
+    --Back-Color-pink: rgb(235, 160, 183);
+}
+
+*{
+    margin: 0px;
+    padding: 1em 0em;
+    box-sizing: border-box;
+    font-family: 'Hammersmith One', sans-serif;
+    background: transparent;
+}
+
+body{
+    background: linear-gradient( 10deg,var(--Text-Color-a) ,   white  ) no-repeat center;
+    width: 101%;
+    margin-bottom: 0em;
+    height: 277.4vh;
+    overflow-x: hidden;
+   
+}
+
+a{ text-decoration: none;}
+
+
+#head-Logo{
+    position: fixed ;
+    top: -20px;
+    left: 0px;
+    box-sizing: border-box;
+    width: 135px;
+    height: 170px;
+}
+
+/********************************************<<<<<<<<<<<<<<<<<<<<<SIDE NAVIGATION BAR>>>>>>>>>>>>>>>>>>>>>>>>>>>>**************************************************************/
+
+#Nav-Fixed-Side{
+    position: fixed;
+    top: -20px;
+    left: -10px;
+    height: 102%;
+    width: 110px;
+    background: transparent;
+    transition: all 3.5s;
+    opacity: .1;
+    z-index: 1;
+}
+#Nav-Fixed-Side:hover{
+    opacity: .85;
+      background: linear-gradient( 10deg,  rgb(149, 173, 161), rgb(165, 192, 178) , white ) no-repeat center;
+      transform: all 3s;
+}
+
+
+
+
+#form-search-nav1{
+    position: relative;
+    top: 200px;
+    left: 3em;
+    transform: translate(-1%,50%);
+    transition: all 2.1s;
+    width: 50px;
+    height: 80px;
+    box-sizing: border-box;
+    border-radius: 50px;
+    padding: 5px;
+}
+
+#Input-Search-nav1{
+    background: transparent;
+    position: relative;
+    top: -14.2px;
+    left: -13px;
+    width: 98%;;
+    height: 80px;
+    line-height: 30px;
+    outline: 0;
+    border: 0;
+    display: none;
+    font-size: 2.1em;
+    border-radius: 50px;
+    text-align: center;
+}
+
+#Search-icon-nav{
+    box-sizing: border-box;
+    padding: 0px 0px; 
+    width: 78px;
+    height: 75px;
+    position: absolute;
+    top: -15px;
+    right: 0;
+    border-radius: 50%;
+    transition: all 2s;
+    cursor:zoom-in;
+}
+
+#form-search-nav1:hover{
+    background: white;
+    border: thick solid var(--Text-color-g-p);
+    width: 600px;
+    cursor: pointer;
+
+}
+
+#form-search-nav1:hover #Input-Search-nav1{
+    display: block;
+}   
+
+
+
+#Go-support-nav{
+    position: relative;
+    top: 25em;
+    left: .5em;
+    height: 133px;
+    cursor: help;
+}
+#Go-support-nav:hover{
+    opacity: .50;
+    padding-top: 10px;
+    
+}
+
+/* #B-HE{
+    font-size: 33px;
+    position: relative;
+    right: 12px;
+    top: 10em;
+    color: var(--Text-Color-g-h);
+    font-weight: 900;
+} 
+#B-HE:hover{
+    color: var(--Text-Color-a);
+} */
+
+#Go-home-nav{
+    overflow-x: hidden;
+    position: relative;
+    left: 0em;
+    top: 36em;
+    height: 148px;
+
+}
+#Go-home-nav:hover{
+    opacity: .85;
+    padding-top: 10px;
+
+}
+
+
+
+
+/****************************************************Header***************************************************************************/
+
+#Logo{
+    position: relative;
+    height: 100vh;
+    width: 100%;
+}
+
+#UI-Logo{
+    position: absolute;
+    height: 300px; 
+    top: 5em;
+    left: 75em;
+    opacity:.60;
+    
+}
+
+#home-nav{
+    margin-left: 6em;
+    position: absolute;
+    top: 0px;
+    font-size: 28px;
+    color: var(--Text-Color-h1);
+
+}
+
+#home-nav a{ color: var(--Text-Color-h1);
+text-decoration: none;
+text-transform: uppercase;
+padding: 1px 17px
+} 
+
+#home-nav .CLICKED-HiGHLIGHT {
+  color: #a70404;
+  text-shadow: 2px 2px black;
+
+}
+
+#home-nav .CLICKED-HiGHLIGHT:hover {
+    color: var(--Text-Color-ba);
+    text-shadow: 4px 4px black;
+  }
+  
+#home-nav :hover {
+    color: var(--Text-color-g-p);
+    position: relative;
+    top: .6em;
+    opacity: 0.65;
+    font-size: 35px;
+
+
+}
+#home-nav a:hover {
+    text-shadow: 3px 4px #202020;
+    }
+
+
+#Logo-text{
+    text-transform: uppercase; 
+    color:var(--Text-Color-h1);
+    position:absolute;
+    top: 3.8em;
+    right: 1.8em;
+    font-weight: bolder;
+    font-size: 80px;  
+    -webkit-text-stroke: 0.1px #8bc1ee;
+}
+
+#say-Title{
+    color:var(--Text-color-g-p);  /*you create your own world */
+    position: absolute;
+     top: 12.2em;
+     right: 3em;
+    font-size: 35px;  
+}
+
+
+#and1{
+    position: absolute;
+    width: 17%;
+    top: 19em;
+    right: 27.9em;
+} 
+#Move-inside{  /* Your privacy word  */
+    position: relative;
+    top: -43px;
+    left: 30px;
+}
+
+
+
+#Short-title{ /* hint two "get linked "*/
+    color:var(--Text-Color-g-h);
+    position: absolute;
+    left : 4em;
+    top: 22em;
+    font-size: 29.5px;  
+    justify-content: space-between;
+}
+
+h1 ,h2 ,h3 ,h4 , h5, h6 ,p ,a {
+    font-weight: bold;
+} 
+ p > b{color: Var(--Text-Color-a);
+    font-size: 33px;
+-webkit-text-stroke: thin var(--Text-color-g-p) ; 
+font-weight:  bolder ;
+} 
+
+/* End of top section and side navigation bar   **********************************************************************************************************/
+
+ 
+/*User share story design right side  *****************************************************************************/
+#border{
+    border-left: #c03d3d solid 3.5px;
+    position: absolute;
+    height: 950px;
+    right: 40em;
+}
+#Logo-share{
+    position: absolute;
+    right: 1em;
+    top: 62em;
+    border-radius: 50%;
+    border: 3px var(--Text-Color-y) solid;
+    padding: 1px 0px;
+}
+
+   #User-Story-to-share{  /* div of right side side {share }  */
+       position: absolute;
+       top: 58em;
+       right: 0em;
+
+   }
+   #Do-You-Title{
+       font-size: 30px;
+       position: relative;
+       left: 1.7em;
+       top: 2em;
+       color: var(--Text-Color-y);
+   }
+   
+   #UI-UIX-AI-1Share{
+    height: 300px;
+    position: relative;
+    right: 10em;
+    top: -20px;
+}
+
+
+
+   #Profile-picture-own {
+       position: absolute;
+       left: 3.1em;
+       top: 26em;
+       height: 100px;
+       border-radius: 50%;
+       border: 5.2px var(--Text-Color-h1) solid; 
+       padding: 1px 1px 3px;
+   }
+   
+   
+   
+   #user-own { /*name*/
+       font-size: 30px;
+       position: absolute;
+       top: 14em;
+       left:5em;
+   }
+   
+   #User-own-time{
+   
+       font-size: 15.9px;
+       position: relative;
+        left: 150px;
+        top: 10px;
+
+   }
+        
+   
+   
+   
+   
+   
+   
+   
+   /*Here is "share to" form design ********/ 
+   #Share-to{
+       position: absolute;
+       top: 19.8em;
+       right: 9.5em;
+       transform: translate(-15%,-15%);
+       transition: all 1s;
+       width: 54px;
+       height: 53px;
+       background:linear-gradient( 10deg,var(--Text-Color-ba) ,  white, white  white, white no-repeat center  );
+       box-sizing: border-box;
+       border-radius: 25px;
+       border: 4px solid var(--Text-Color-g-h);
+       padding: 5px;
+   }
+   
+   
+   
+   #share-icon{
+       box-sizing: border-box;
+       padding: 0px 0px; 
+       width: 45px;
+       height: 45px;
+       position: absolute;
+       top: 0px;
+       right: 1px;
+       border-radius: 50%;
+       text-align: center;
+       transition: all 1s;
+       background-color: var(--Text-Color-g-h);
+   }
+   
+   
+   
+   
+   #Share-to:hover{
+       border: thick solid var(--Text-Color-ba);
+       width: 250px;
+       cursor: pointer;
+   }
+   
+   #Share-to:hover #social-input{
+       display: block;
+       cursor: pointer;
+   
+   }
+   
+   #Share-to:hover #share-icon{
+       background-color: var(--Text-Color-ba);
+       top: -13px;
+       right: 1px;}
+       
+   #twitter-Icon{
+       visibility: hidden;
+       box-sizing: border-box;
+       padding: 0px 0px; 
+       width: 45px;
+       height: 50px;
+       position: absolute;
+       top: -15px;
+       right: 0px;
+       border-radius: 60%;
+       text-align: center;
+       transition: all 4s;
+   }    
+   
+       
+   #Share-to:hover  #twitter-Icon{
+       visibility: visible;
+       right:175px;
+       transition: all .2s;
+           
+   }
+       
+       #Facebook-Icon{
+           visibility: hidden;
+           box-sizing: border-box;
+           padding: 0px 0px; 
+           width: 45px;
+           height: 45px;
+           position: absolute;
+           top: -12px;
+           right: 60px;
+           border-radius: 60%;
+           text-align: center;
+           transition: all .2s;
+   }
+       
+   #Share-to:hover  #Facebook-Icon{
+           visibility: visible;
+           transition: all .1s;
+       
+   }
+       
+       
+    #insta-Icon{
+           visibility: hidden;
+           box-sizing: border-box;
+           padding: 0px 0px; 
+           width: 45px;
+           height: 48px;
+           position: absolute;
+           top: -15px;
+           right: 120px;
+           border-radius: 60%;
+           text-align: center;
+           transition: all .2s;
+   }
+       
+   #Share-to:hover  #insta-Icon{
+           visibility: visible;
+           transition: all .1s;
+   }
+   
+
+   /*input-ing area*/
+ 
+
+#fieldest-of-share{
+        border: 4px yellow solid;
+        text-align: center;
+        font-size: 30px;
+        color: var(--Text-color-g-p-f);
+        position: relative;
+        top: -85px;
+        right:115px;      
+        width:585px;
+        height: 535px;
+        background:linear-gradient(20deg  ,var(--Text-Color-y) , rgb(248, 243, 217), white , white  )
+   }
+
+   #Subject-email{  /*subject input */
+    position: relative;
+    top: -15.5em;
+    width: 560px;
+    height: 40px;
+    right: -0.25em;
+    font-size: 30px;
+    outline: none;
+    border: 2.95px solid #c03d3d;
+}
+
+#message-area{
+    border-radius: 10px ;
+    border: 2.95px #c03d3d solid;
+    position: relative;
+    top: -18em;
+    right: -0.25em;
+    width: 560px;
+    height: 300px;
+    font-size: 25px;
+    outline: none;
+    text-align: start;
+    overflow-x: hidden;
+
+}
+#disabled-input{
+    position: relative;
+    top: -16.4em;
+    width: 550px;
+    height: 1px;
+    font-size: 27px;
+    right: -0.38em;
+    border: #c03d3d thin solid;    /* i did hide the border because it's looks very bad */
+    text-align: center; 
+    border-radius:11px;
+    opacity: 0.50;
+}
+#disabled-input::placeholder {
+    color: #c03d3d;
+  }
+#Share-with-us{
+    display: block;
+    width: 500px;
+    line-height: 0px;
+    position: relative;
+    top: 13em;
+}
+/* textarea{
+    resize: none; 
+} */
+
+#share-button{
+    
+    position: absolute;
+    top: -6em;
+    right: 0em; 
+
+}
+
+#share-button:hover{
+    cursor: pointer;
+
+}
+
+
+
+   /*Here is mailto form design **************/ 
+   #Mailto{
+    position: relative;
+    top: -5em;
+    left: 26.7em;
+    transform: translate(-80%,-20%);
+    transition: all 1s;
+    width: 53px;
+    height: 53px;
+    background: transparent;
+    box-sizing: border-box;
+    border-radius: 25px;
+    border: 4px solid rgb(255, 0, 0);
+    padding: 5px;
+}
+
+#label-email-button{
+    position: relative;
+    top: -1.2em;
+    background: transparent;
+    right: 30px;
+    width: 100%;;
+    height: 40px;
+    line-height: 30px;
+    outline: 0;
+    border: 0;
+    display: none;
+    font-size: 2em;
+    border-radius: 20px;
+    transform: translate(12% , -10% );
+    color: red;
+}
+#label-email-button::first-letter{
+    color:var(--Text-Color-a);
+    font-size: 2.3em;
+}
+a {text-decoration: none;}
+#Email-icon{
+    box-sizing: border-box;
+    padding: 0px 0px; 
+    width: 45px;
+    height: 45px;
+    position: absolute;
+    top: -1px;
+    right: -1px;
+    border-radius: 60%;
+    text-align: center;
+    transition: all 1s;
+}
+
+#Mailto:hover{
+    border: thick solid var(--Text-Color-a);
+    width: 220px;
+    cursor: pointer;
+}
+
+#Mailto:hover #label-email-button{
+    display: block;
+    cursor: pointer;
+
+}
+
+#Mailto:hover #Email-icon{
+    right: 1px;}
+
+
+/* End of Email to form  */
+         
+   
+   
+  /* End of Do you have a story to share right side  *************************************************************************************************************************** */
+       
+   
+   
+   
+   
+ /*  stories  left side  author 1 ******************************************************************************************************************************************/
+
+ #Find-story{
+    position: absolute;
+    top: 69em;
+    right: 48em;
+    transform: translate(1%,-50%);
+    transition: all 2.5s;
+    width: 220px;
+    height: 50px;
+    box-sizing: border-box;
+    border-radius: 25px;
+    border: 4px solid var(--Text-color-g-p-f);
+    padding: 10px;
+}
+#Find-story h1{
+    position: relative;
+    top: -39px;
+    left:0px;
+    font-size:30px;
+    color: #8bc1ee
+}
+
+#Input-Search-box{
+    background: transparent;
+    position: relative;
+    top: -11px;
+    left: -10px;
+    width: 100%;;
+    height: 43px;
+    line-height: 30px;
+    outline: 0;
+    border: 0;
+    display: none;
+    font-size: 2em;
+    border-radius: 20px;
+    padding: 0 20px;
+}
+
+#Search-icon{
+    box-sizing: border-box;
+    padding: 0.05px 0.05px; 
+    width: 45px;
+    height: 45px;
+    position: absolute;
+    top: -10px;
+    right: 0;
+    border-radius: 50%;
+    text-align: center;
+    transition: all 2.1s;
+}
+
+#Find-story:hover{
+    border: thick solid #8bc1ee;
+    width: 600px;
+    height: 50px;
+    cursor: pointer;
+}
+#Find-story:hover h1{
+    opacity: .25;
+    transition: all 4s; /*TODO:  animation */ 
+    color: #8bc1ee;
+    display: none;
+}
+
+#Find-story:hover #Input-Search-box{
+    display: block;
+}
+
+
+#Stories-body{
+    position: absolute;
+   top: 70em;
+   left: 5em;
+   height: 100vh;
+   width: 60%;
+      overflow-x: hidden;    
+    overflow-y: hidden;   
+}
+
+ #Stories-body::-webkit-scrollbar {
+    display: none;
+} 
+.IMGHOVER{
+       position: relative;
+       left: 150px;
+       top: 100px;
+       width: 400px;
+       height: 480px;
+       border-radius: 40px;
+   }
+   .IMGHOVER:hover{
+       opacity: .80;
+       position: relative;
+       right: 25px; 
+   }
+  
+   .authors-Profile-picture{
+       border: Var(--Text-Color-h1) solid 3.2px;
+       border-radius: 50%;
+       width: 110px;
+       padding: 0px 0px ; /*this padding to fit the img inside the border / {To make the borders on the edgy of the image}*/
+       position: relative;
+       top: -22.5em;
+       left: 32em; 
+   }
+   
+   .authors-profile-names{
+       color: Var(--Text-Color-h1);
+       font-size: 30px;
+       position: relative;
+       top: -17.5em;
+       left: 14em;
+   
+   }
+   
+   .dateAndtime{
+    font-size: 20px;
+    position: relative;
+    top: -30em;
+    left: 6em;
+   }
+   
+   .authors-Title{
+       font-size: 40px;
+       color: var(--Text-Color-y);
+       position: relative;
+       top: -16.5em;
+       left: 10em;
+   }
+   
+   .authors-profile-paragraphs{
+       font-size: 21px;
+       color: var(--Text-Color-h1);
+       position: relative;
+       top: -32em;
+       left: 27em;
+       text-align: center;
+       width: 26em;     
+   }
+
+.Line-horizontal{
+    position: relative;
+    left: 19em;
+    top: -43.2em;
+    border: none;
+    border-bottom: 2px black solid;
+    width: 50em;
+}
+   .authors-Tags-List {
+           font-size: 22px;
+           position: relative;
+           top: -32em;
+           left: 18em;
+           font-weight: bolder;
+           
+   }
+   .authors-Tags-List > H3 {
+       position: relative;
+       right:  5.9em;
+       top: 15px;
+   }
+   .tag-list {
+        font-weight: normal;
+       position: relative;
+       left: 8px;
+       top: -2.2em;
+       line-height: 0px;
+   }
+   .interactive-with{
+       position: relative;
+       top: -62em;
+       left: 50em;
+       display: inline-flex;
+       background-color: transparent;
+   }
+   
+   
+   
+   #like{
+   position: relative;
+   right: 170px;
+   height: 110px;
+   width: 80px;
+   
+   }
+   
+   #share{
+       position: relative;
+       left: 10px;
+       height: 110px;
+       width: 80px;
+       
+       }
+   
+   #Disliek{
+       position: relative;
+       right: 90px;
+       height: 110px;
+       width: 80px;
+   }
+       
+   
+   
+           
+   
+            /*Here is comment form design  */
+            
+
+    
+.Comment-Form-right{    /*Form comment "body" */
+    position: relative;
+    top: 8em;
+    right: 20em;
+    transform: translate(-25%,-50%);
+    transition: all 1s;
+    width: 300px;  
+    height: 50px;
+    box-sizing: border-box;
+    border-radius: 25px;
+    border: 4px solid var(--Text-Color-g);
+    padding: 5px;
+}
+
+#Comment-box{ /* input form  */
+    position: relative;
+    top: -4px;
+    left: 20px;
+    width: 100%;
+    height: 40px;
+    line-height: 30px;
+    outline: 0;
+    border: 0;
+    display: none;
+    font-size: 1em;
+    border-radius: 20px;
+    padding: 0 15px;
+    display: block;
+    background-color: transparent;
+    font-size: 20px;
+
+}
+
+
+#comment{  /*comment  Icon */
+    box-sizing: border-box;
+    padding: 0.05px 0.05px; 
+    width: 50px;
+    height: 45px;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 31px;
+    transition: all 1s;
+    background-color: var(--Text-Color-y);
+}
+
+.Comment-Form-right:hover{
+    border: thick solid var(--Text-color-g-p);
+    width: 500px;
+    cursor: pointer;
+}
+
+.Comment-Form-right:hover #Comment-box{
+    display: block;
+    font-size: 23px;
+
+}
+
+.Comment-Form-right:hover #comment{
+    background: var(--Text-color-g-p);
+}
+    
+
+
+/* end of author left class  */
+
+
+
+
+
+
+
+
+/* links next button and previous */
+
+
+.next-buttons , .previous-buttons{
+    border: #a70404 5px solid;
+    border-radius: 50px;
+    font-size:28px ;
+    padding: 1px 20px ;
+    color: #a70404;
+    position: relative;
+
+}
+.previous-buttons{
+    padding: 1px 13.5px ;
+    right: 40px;
+}
+
+.Links-next-previous-store{
+    position: absolute;
+    top: 13.5em;
+    left: -10em;     
+}    
+
+
+/*footer */
+
+
+footer{
+     position: absolute;
+    top :150em ;
+    transform: translateY(1%); 
+    border: thick solid lightgray;
+    width: 100%;
+    height: 17em;
+    color:var(--Text-Color-y);
+    margin-bottom: 0em;
+    background: #c03d3d
+}
+
+#Go-to-Top{
+    position: absolute;
+    top: -10em;
+    left: 50em;
+    height: 200px;
+    width: auto;
+    margin-bottom: 0em;
+
+
+}   
+#Go-to-Top:hover{
+    position: absolute;
+    top: -12.5em;
+    transition: all  2s;
+} 
+
+
+#Go-to-Next{
+    position: absolute;
+    top: -6em;
+    left: 67em;
+    height: 100px;
+    cursor:progress;
+
+}
+#Go-to-Next:hover{
+    position: absolute;
+    box-sizing: unset;
+   
+}
+
+#NO-where{
+    height: 100px;
+    position: absolute;
+    top: -6em;
+    left: 49em;
+
+}
+
+#NO-where:hover{
+    cursor: not-allowed;
+    box-sizing: unset;
+}
+
+
+footer p {
+    position: relative;
+    top: -30px;
+    left: 350px;
+    font-size: 28px;
+    
+}
+
+.C-footer {
+    color: rgb(33, 168, 231);
+}   
+
+#p-footer :hover{
+    color: rgb(250, 196, 96);
+    text-shadow: 3px 3.5px black;
+    font-size: 30px;
+    position: relative;
+    top: 10px;
+}
+
+#Follow-us {
+    
+    font-size: 19px;
+    position: absolute;
+    top: 2.8em;
+    left: 36em;
+    color:var(--Text-Color-h1);
+    margin-bottom: 0em;
+
+}
+
+.Social-US { 
+    height: 100px;
+    position: relative;
+    left: 50px;
+    
+}
+
+
+ #copy{
+    position: relative;
+    right: 20px;   
+    top: -20px;
+    font-size: 23px;
+    color: gray;
+
+}
+
+#powered{
+    position: relative;
+    left: 5em;
+    color: gray;
+    font-size: 22px;
+    top: -55px;
+    margin-bottom: -21em;
+
+} 

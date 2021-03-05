@@ -1,0 +1,1460 @@
+@import url('https://fonts.googleapis.com/css2?family=Hammersmith+One&display=swap');
+
+
+:root{
+    --Desktop:(1920px);
+    --laptop:(991px);
+    --Text-Color-h1: #202020;
+    --Text-Color-g: #707070;
+    --Text-Color-a: #CADDED;
+    --Text-Color-y: #FFDF6C;
+    --Text-Color-ba: #229151;
+    --Text-Color-g-h: #833820;
+    --Text-color-g-p: #CE6949;
+    --Text-Color-Le:  lemonchiffon;
+    --Text-color-g-p-f: #c03d3d;
+    --Back-Color-Blue: rgb(214, 239, 252);
+    --Back-Color-pink: rgb(235, 160, 183);
+}
+
+*{
+
+    margin: 10px;
+    padding: 1em 0em;
+    box-sizing: border-box;
+    font-family: 'Hammersmith One', sans-serif;
+    background: transparent;
+}
+
+body{
+    background: linear-gradient( 10deg,var(--Text-Color-ba) ,   white  ) no-repeat center;;
+    width: 101%;
+    height: 1200vh;
+    margin-bottom: 0em;
+    /* overflow-x: hidden ; */
+   
+}
+
+a{ text-decoration: none;}
+
+
+#head-Logo{
+    position: fixed ;
+    top: -33px;
+    left: -20px;
+    box-sizing: border-box;
+    width: 135px;
+    height: 170px;
+}
+
+/********************************************<<<<<<<<<<<<<<<<<<<<<SIDE NAVIGATION BAR>>>>>>>>>>>>>>>>>>>>>>>>>>>>**************************************************************/
+
+#Nav-Fixed-Side{
+    position: fixed;
+    top: -20px;
+    left: -10px;
+    height: 102%;
+    width: 110px;
+    background: transparent;
+    transition: all 3.5s;
+    opacity: .10;
+    z-index: 1;
+}
+#Nav-Fixed-Side:hover{
+    opacity: .85;
+      background: linear-gradient( 10deg,  rgb(149, 173, 161), rgb(165, 192, 178) , white ) no-repeat center;
+      transform: all 3s;
+}
+
+
+
+
+#form-search-nav1{
+    position: relative;
+    top: 200px;
+    left: 3em;
+    transform: translate(-1%,50%);
+    transition: all 2.1s;
+    width: 50px;
+    height: 80px;
+    box-sizing: border-box;
+    border-radius: 50px;
+    padding: 5px;
+}
+
+#Input-Search-nav1{
+    background: transparent;
+    position: relative;
+    top: -14.2px;
+    left: -13px;
+    width: 98%;;
+    height: 80px;
+    line-height: 30px;
+    outline: 0;
+    border: 0;
+    display: none;
+    font-size: 2.1em;
+    border-radius: 50px;
+    text-align: center;
+}
+
+#Search-icon-nav{
+    box-sizing: border-box;
+    padding: 0px 0px; 
+    width: 78px;
+    height: 75px;
+    position: absolute;
+    top: -15px;
+    right: 0;
+    border-radius: 50%;
+    transition: all 2s;
+    cursor:zoom-in;
+}
+
+#form-search-nav1:hover{
+    background: white;
+    border: thick solid var(--Text-color-g-p);
+    width: 600px;
+    cursor: pointer;
+
+}
+
+#form-search-nav1:hover #Input-Search-nav1{
+    display: block;
+}   
+
+
+ /* #B-ST{
+    position: relative;
+    right: 19.11px;
+    top: 10em;
+    color: var(--Text-Color-g-h);
+    font-size: 28px;
+}
+#B-ST:hover{             TODO:this is text inside the nav fixed i have hide it Temporary nav support text
+    color: var(--Text-Color-a);
+    cursor: help;
+}  */
+
+#Go-support-nav{
+    position: relative;
+    top: 25em;
+    right: 15px;
+    height: 133px;
+    cursor: help;
+}
+#Go-support-nav:hover{
+    opacity: .50;
+    padding-top: 10px;
+    
+}
+
+/* #B-HE{ TODO:this is text inside the nav fixed i have hide it Temporary nav Home text
+    font-size: 33px;
+    position: relative;
+    right: 12px;
+    top: 10em;
+    color: var(--Text-Color-g-h);
+    font-weight: 900;
+} 
+#B-HE:hover{
+    color: var(--Text-Color-a);
+} */
+
+
+#Go-home-nav{
+    overflow-x: hidden;
+    position: relative;
+    right: 22.96px;
+    top: 32em;
+    height: 148px;
+
+}
+#Go-home-nav:hover{
+    opacity: .85;
+    padding-top: 10px;
+
+}
+
+
+
+
+/****************************************************Header***************************************************************************/
+
+#Logo{
+    /* This positions and styles on screen size 1920 * 911 ratio 16/9 */
+    position: relative;
+    top: -110px;
+    right: 3em;
+    height: 110%;
+    width: 57%;
+}
+/* #Logo:hover{
+    opacity: 0.75;
+
+} */
+
+#UI-UIX-Design{
+    position: absolute;
+    height: 900px; 
+    top: 0em;
+    left: 70em;
+    opacity:.85;
+    
+}
+
+#home-nav{
+    margin-left: 4em;
+    position: absolute;
+    top: 0px;
+    left: 0em;
+    font-size: 28px;
+    color: var(--Text-Color-h1);
+
+}
+
+#home-nav a{ color: white;
+text-decoration: none;
+text-transform: uppercase;
+padding: 1px 17px
+} 
+
+#home-nav .CLICKED-HiGHLIGHT {
+  color: var(--Text-color-g-p-f);
+  text-shadow: 4px 10px black;
+
+}
+
+#home-nav .CLICKED-HiGHLIGHT:hover {
+    color: var(--Text-Color-ba);
+    text-shadow: 4px 7px black;
+  }
+  
+#home-nav :hover {
+    color: var(--Text-color-g-p);
+    position: relative;
+    top: .6em;
+    opacity: 0.65;
+    font-size: 35px;
+
+
+}
+#home-nav a:hover {
+    text-shadow: 3px 4px #202020;
+    }
+#form-search-box{
+    position: absolute;
+    top: 3em;
+    left: 73em;
+    transform: translate(-25%,-50%);
+    transition: all 1s;
+    width: 200px;
+    height: 50px;
+    background:linear-gradient( 10deg,var(--Text-Color-ba) ,  white, white  white, white no-repeat center  );
+    box-sizing: border-box;
+    border-radius: 25px;
+    border: 4px solid var(--Text-Color-ba);
+    padding: 5px;
+}
+
+#Input-Search-box{
+    position: relative;
+    top: -14.2px;
+    background:linear-gradient( 10deg,var(--Text-Color-ba) ,  white,  white, white  );
+    left: -13px;
+    width: 100%;;
+    height: 40px;
+    line-height: 30px;
+    outline: 0;
+    border: 0;
+    display: none;
+    font-size: 1em;
+    border-radius: 20px;
+    padding: 0 20px;
+}
+
+#Search-icon{
+    box-sizing: border-box;
+    padding: 0.05px 0.05px; 
+    width: 45px;
+    height: 45px;
+    position: absolute;
+    top: -15px;
+    right: 0;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 31px;
+    transition: all 1s;
+}
+
+#form-search-box:hover{
+    border: thick solid var(--Text-color-g-p);
+    width: 480px;
+    cursor: pointer;
+}
+
+#form-search-box:hover #Input-Search-box{
+    display: block;
+}
+
+#form-search-box:hover #Search-icon{
+    background: var(--Text-Color-ba);
+}
+
+
+
+#Logo-text{
+    text-transform: uppercase; 
+    color:var(--Text-Color-h1);
+    position: relative;
+    left: 807.5px;
+    top: -500px;
+    font-size: 75px;  
+    
+}
+
+#say-Title{
+    color:var(--Text-color-g-p);
+    position: relative;
+    left: 815px;
+    top: -630px;
+    font-size: 35px;  
+
+}
+
+#Logo-Hov:hover{
+    font-size: 20px;
+position: relative;
+right: 2em;
+}
+
+
+#and1{
+    position: absolute;
+    width: 17%;
+    top: 40em;
+    left: 43.2em;
+} 
+#Move-inside{
+    position: relative;
+    top: -43px;
+    left: 30px;
+}
+
+
+
+#Short-title{
+    color:var(--Text-Color-g-h);
+    position: relative;
+    left: 1250px;
+    top: -750px;
+    font-size: 29.5px;  
+    justify-content: space-between;
+}
+
+h1 ,h2 ,h3 ,h4 , h5, h6 ,p ,a {
+    font-weight: bold;
+} 
+ p > b{color: Var(--Text-Color-a);
+    font-size: 33px;
+-webkit-text-stroke: thin var(--Text-color-g-p) ; 
+font-weight:  bolder ;
+} 
+
+/* End of top section  **********************************************************************************************************/
+
+/* Do you have a story to share Section/ dic *********************************************************************************** */
+
+#All-In-Flex-Stories-p{   /**Section all in **/
+ background-color: transparent; 
+ position: relative;
+ top: -900px;  
+ height: 955vh;
+ margin-bottom: -1em;
+
+
+}
+
+#User-Story-to-share{
+    margin-left: 10em;
+}
+#Do-You-Title{
+    font-size: 45px;
+    position: relative;
+    left: 19em;
+    top: 220px;
+    color: var(--Text-Color-y);
+}
+
+#Profile-picture-own {
+    position: relative;
+    top: -38px;
+    height: 150px;
+    border-radius: 50%;
+    border: 5.2px var(--Text-Color-h1) solid; 
+    padding: 0px 0px 1px;
+}
+
+#Hold-All-in-Border{
+
+    display: inline-flex;
+}
+
+#user-own { /*name*/
+    font-size: 46px;
+    position: relative;
+    top: -55px;
+}
+
+#User-own-time{
+
+    font-size: 15.9px;
+    position: relative;
+    right: 264.5px;
+    top: 30px;
+}
+     
+
+
+
+/*Here is mailto form design **************************************************************************************************************************/ 
+#Mailto{
+    position: relative;
+    top: -3em;
+    left: 36em;
+    transform: translate(-15%,-50%);
+    transition: all 1s;
+    width: 53px;
+    height: 53px;
+    background: transparent;
+    box-sizing: border-box;
+    border-radius: 25px;
+    border: 4px solid rgb(255, 0, 0);
+    padding: 5px;
+}
+
+#label-email-button{
+    position: relative;
+    top: -1.2em;
+    background: transparent;
+    right: 30px;
+    width: 100%;;
+    height: 40px;
+    line-height: 30px;
+    outline: 0;
+    border: 0;
+    display: none;
+    font-size: 2em;
+    border-radius: 20px;
+    transform: translate(12% , -10% );
+    color: red;
+}
+#label-email-button::first-letter{
+    color:var(--Text-Color-a);
+    font-size: 2.3em;
+}
+a {text-decoration: none;}
+#Email-icon{
+    box-sizing: border-box;
+    padding: 0px 0px; 
+    width: 45px;
+    height: 45px;
+    position: absolute;
+    top: -15px;
+    right: -10px;
+    border-radius: 60%;
+    text-align: center;
+    transition: all 1s;
+}
+
+#Mailto:hover{
+    border: thick solid var(--Text-Color-a);
+    width: 220px;
+    cursor: pointer;
+}
+
+#Mailto:hover #label-email-button{
+    display: block;
+    cursor: pointer;
+
+}
+
+#Mailto:hover #Email-icon{
+    right: 1px;}
+
+
+/* End of Email to form  */
+
+
+
+
+/*Here is "share to" form design ****************************************************************************************************************************************/ 
+#Share-to{
+    position: relative;
+    top: 5em;
+    left: 28.5em;
+    transform: translate(-55%,-15%);
+    transition: all 1s;
+    width: 53px;
+    height: 53px;
+    background:linear-gradient( 10deg,var(--Text-Color-ba) ,  white, white  white, white no-repeat center  );
+    box-sizing: border-box;
+    border-radius: 25px;
+    border: 4px solid var(--Text-Color-g-h);
+    padding: 5px;
+}
+
+
+
+#share-icon{
+    box-sizing: border-box;
+    padding: 0px 0px; 
+    width: 45px;
+    height: 45px;
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    border-radius: 60%;
+    text-align: center;
+    transition: all 1s;
+    background-color: var(--Text-Color-g-h);
+}
+
+
+
+
+#Share-to:hover{
+    border: thick solid var(--Text-Color-ba);
+    width: 250px;
+    cursor: pointer;
+}
+
+#Share-to:hover #social-input{
+    display: block;
+    cursor: pointer;
+
+}
+
+#Share-to:hover #share-icon{
+    background-color: var(--Text-Color-ba);
+    top: -13px;
+    right: 1px;}
+    
+#twitter-Icon{
+    visibility: hidden;
+    box-sizing: border-box;
+    padding: 0px 0px; 
+    width: 45px;
+    height: 50px;
+    position: absolute;
+    top: -15px;
+    right: 0px;
+    border-radius: 60%;
+    text-align: center;
+    transition: all 4s;
+}    
+
+    
+#Share-to:hover  #twitter-Icon{
+    visibility: visible;
+    right:175px;
+    transition: all .2s;
+        
+}
+    
+    #Facebook-Icon{
+        visibility: hidden;
+        box-sizing: border-box;
+        padding: 0px 0px; 
+        width: 45px;
+        height: 45px;
+        position: absolute;
+        top: -12px;
+        right: 60px;
+        border-radius: 60%;
+        text-align: center;
+        transition: all .2s;
+}
+    
+#Share-to:hover  #Facebook-Icon{
+        visibility: visible;
+        transition: all .1s;
+    
+}
+    
+    
+ #insta-Icon{
+        visibility: hidden;
+        box-sizing: border-box;
+        padding: 0px 0px; 
+        width: 45px;
+        height: 48px;
+        position: absolute;
+        top: -15px;
+        right: 120px;
+        border-radius: 60%;
+        text-align: center;
+        transition: all .2s;
+}
+    
+#Share-to:hover  #insta-Icon{
+        visibility: visible;
+        transition: all .1s;
+}
+
+
+/*Here is Micro-soft form design ************************************************************************************************************************************/
+#MS-Form{
+    position: absolute;
+    top: 8em;
+    left: 37em;
+    transform: translate(-0%,-20%);   
+    transition: all 1s;
+    
+    width: 53px;
+    height: 53px;
+    background-color: transparent;
+    box-sizing: border-box;
+    border-radius: 25px;
+    border: 4px solid var(--Text-Color-y);
+    padding: 5px;
+}
+
+
+
+#micro-Soft{
+    box-sizing: border-box;
+    padding: 0px 0px; 
+    width: 45px;
+    height: 45px;
+    position: absolute;
+    top: -10px;
+    right: -11px;
+    border-radius: 60%;
+    text-align: center;
+    transition: all 1s;
+}
+
+
+
+ 
+ #MS-Form:hover{
+    border: thick solid var(--Text-Color-a);
+    height: 250px;
+    cursor: pointer;
+} 
+
+
+#MS-Form:hover #micro-Soft{
+    background-color: var(--Text-Color-a);
+    top: -13px;
+    left: -10px; /*Why i used left -10  instead of right 10 because i cant center it with right because 0 px on the side/ edgy  */
+}
+
+
+#Teams-Icon{
+        visibility: hidden;
+        box-sizing: border-box;
+        padding: 0px 0px; 
+        width: 45px;
+        height: 50px;
+        position: absolute;
+        top: 180px;
+        left: -10px;
+        border-radius: 60%;
+        text-align: center;
+        transition: all .4s;
+    }    
+
+
+#MS-Form:hover  #Teams-Icon{
+    visibility: visible;
+    right:175px;
+    transition: all .1s;
+    
+}
+
+#OutLook-Icon{
+    visibility: hidden;
+    box-sizing: border-box;
+    padding: 0px 0px; 
+    width: 45px;
+    height: 45px;
+    position: absolute;
+    top: 110px;
+    left: -10px;
+    border-radius: 60%;
+    text-align: center;
+    transition: all .2s;
+}
+
+#MS-Form:hover  #OutLook-Icon{
+    visibility: visible;
+    transition: all .1s;
+
+}
+
+
+#Skype-Icon{
+    visibility: hidden;
+    box-sizing: border-box;
+    padding: 0px 0px; 
+    width: 45px;
+    height: 48px;
+    position: absolute;
+    top: 49px;
+    left: -10px;
+    border-radius: 60%;
+    text-align: center;
+    transition: all .2s;
+}
+
+#MS-Form:hover  #Skype-Icon{
+    visibility: visible;
+    transition: all .1s;
+}
+    
+
+#Subject-email{
+    position: relative;
+    top: -5em;
+    width: 585px;
+    height: 40px;
+    right: 0.90em;
+    font-size: 30px;
+    outline: none;
+    border: thin solid var(--Text-Color-g-h);
+}
+#UI-UIX-AI-1Share{
+    height: 500px;
+    position: absolute;
+    left :37em;
+    top: 60px;
+}
+#message-area{
+    border-radius: 10px ;
+    border: thin var(--Text-Color-g-h) solid;
+    position: relative;
+    top: -6.2em;
+    right: 1em;
+    width: 585px;
+    height: 300px;
+    font-size: 25px;
+    align-content:stretch;
+    align-content: flex-start;
+    justify-content: start;
+    outline: none;
+
+}
+
+
+#Share-with-us{
+    display: block;
+    width: 500px;
+    line-height: 0px;
+    position: relative;
+    top: 13em;
+}
+textarea{
+    resize: none;
+   
+}
+
+#share-button{
+    background-color:none;
+    position: absolute;
+    top: 11em;
+    left: 36em;
+    height: 80px;
+
+}
+#share-button:hover{
+    cursor: pointer;
+
+}
+
+
+/* End of Do you have a story *************************************************************************************************************************** */
+    
+
+
+
+
+/* Top stories ******************************************************************************************************************************************/
+#Top-Stoies{   /*TODO:Spilling mistake */
+    position: relative;
+    top: 500px;
+    margin-left: 10em;
+    margin-right: 10em;
+    display: inline-flex;
+    border: var(--Text-Color-y) solid thick;
+    width: 87%;
+    height: 450px;
+    margin-bottom: 15em;
+    
+}
+
+#Forward-Stories{
+    width: auto;
+    height: 120px;
+    border-radius: 50%;
+    position: relative;
+    bottom: -120px;
+    right:65px;
+}
+
+#backward-Stories{
+    width: auto;
+    height: 120px;
+    border-radius: 50%;
+    position: relative;
+    top: 120px;
+    right: 50px;
+}
+#backward-Stories:hover{
+    border: var(--Text-Color-g-h) 3.2px solid;
+    opacity: .80;
+    border-radius: 150px;
+    padding: 0px 0px;
+    transition: all 1s;
+    right: 80px;
+}
+#Forward-Stories:hover{
+    border: var(--Text-Color-g-h) 3.2px solid;
+    border-radius: 150px;
+    opacity: .80;
+    padding: 0px 0px;
+    transition: all 1s;
+    right: 80px;
+}
+
+.Users-images{
+    position: relative;
+    right: 50px;
+    top: -2em;
+    width: 260px;
+    height: 410px;
+    border-radius: 50px;
+    border: solid 5px var(--Text-Color-g-h) ;
+    padding: 0px 0px; 
+       
+  }
+.Users-images:hover{
+    position: relative;
+    height: 550px;
+    width: 280px;
+    top: -5em;
+}
+
+.Profile-pic-all{
+
+    position: relative;
+    right: 40px;
+    top: -28.5em;
+    border-radius: 50%;
+    border: solid 2.2px var(--Text-Color-ba) ;
+    padding: 0px 0px;    
+    width: 90px;
+    height: 90px;
+     
+  }
+
+.Users-images:hover ~ .Profile-pic-all  { /*TODO: fix function */
+    width: 50px;
+    height: 50px;
+    position: relative; 
+    top: -40em;
+  }
+
+
+  .users-names{
+    font-size: 21.8px;
+    color: var(--Text-Color-y);
+    position: relative;
+    top: -26em;
+    left: 53px;
+}
+
+.Users-images:hover ~ .users-names{
+    font-size: 21.8px;
+    color: white;
+    position: relative;
+    top: -33.5em;
+    left: 10px;
+}
+ 
+/*End ofTop stories ******************************************************************************************************************************************/
+
+
+/* <<<<<<<<<<<<<<Here is the authors posts  {First Author} right class>>>>>>***********************************************************************************************************************/
+div{
+    margin-bottom: -1em;
+}
+#author1{
+    margin-top: 15em;
+
+}
+.authors{
+    position: relative;
+    top: -100px;
+    margin-left: 11em;
+    margin-right: 11em;
+    margin-bottom: -10em;
+
+}
+
+.IMGHOVER{
+    position: relative;
+    top: 210px;
+    height: 1000px;
+    width: 850px;
+    opacity: .95;
+     border-radius: 50px; 
+}
+.IMGHOVER:hover{
+    opacity: .80;
+    position: relative;
+    right: 25px; 
+}
+
+
+.authors-Profile-picture{
+    border: Var(--Text-Color-h1) solid 3.2px;
+    border-radius: 50%;
+    width: 140px;
+    padding: 0px 0px ; /*this padding to fit the img inside the border / {To make the borders on the edgy of the image}*/
+    position: relative;
+    top: -40.9em;
+    right: 0px;
+}
+
+.authors-profile-names{
+    color: Var(--Text-Color-h1);
+    font-size: 55px;
+    position: relative;
+    top: -15.5em;
+    left: 19em;
+
+}
+
+.dateAndtime{
+ font-size: 22px;
+ position: relative;
+ top: -42.5em;
+ left: 46.4em;
+
+}
+
+.authors-Title{
+    font-size: 61px;
+    color: var(--Text-Color-y);
+    position: relative;
+    top: -14em;
+    left: 12em;
+}
+
+
+.authors-profile-paragraphs{
+    font-size: 26px;
+    color: var(--Text-Color-h1);
+    position: relative;
+    top: -35em;
+    left: 34em;
+    justify-content: center;
+
+}
+.authors-profile-paragraphs::first-letter {
+    font-size: 300%;
+    position: relative;
+    
+  }
+
+
+.authors-Tags-List {
+    font-size: 22px;
+        position: relative;
+        top: -48em;
+        left: 42em;
+        display: inline-flex;
+}
+.tag-list {
+    position: relative;
+    right: 100px;
+    list-style: none; 
+}
+.interactive-with{
+
+    position: relative;
+    top: -55em;
+    left: 40em;
+    display: inline-flex;
+    background-color: transparent;
+}
+
+
+
+#like{
+position: relative;
+right: 170px;
+height: 110px;
+width: 80px;
+
+}
+
+#share{
+    position: relative;
+    left: 10px;
+    height: 110px;
+    width: 80px;
+    
+    }
+
+#Disliek{
+    position: relative;
+    right: 90px;
+    height: 110px;
+    width: 80px;
+}
+    
+
+
+        
+
+            /*Here is comment form design  */
+            
+
+    
+.Comment-Form-right{    /*Form comment */
+    position: relative;
+    top: 8em;
+    right: 22em;
+    transform: translate(-25%,-50%);
+    transition: all 1s;
+    width: 230px;  
+    height: 50px;
+    box-sizing: border-box;
+    border-radius: 25px;
+    border: 4px solid var(--Text-Color-g);
+    padding: 5px;
+}
+
+#Comment-box{
+    position: relative;
+    top: -14.2px;
+    left: -13px;
+    width: 100%;
+    height: 40px;
+    line-height: 30px;
+    outline: 0;
+    border: 0;
+    display: none;
+    font-size: 1em;
+    border-radius: 20px;
+    padding: 0 15px;
+    display: block;
+    background-color: transparent;
+    font-size: 20px;
+
+}
+
+
+#comment{
+    box-sizing: border-box;
+    padding: 0.05px 0.05px; 
+    width: 50px;
+    height: 45px;
+    position: absolute;
+    top: -15px;
+    right: 0;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 31px;
+    transition: all 1s;
+    background-color: var(--Text-Color-y);
+}
+
+.Comment-Form-right:hover{
+    border: thick solid var(--Text-color-g-p);
+    width: 500px;
+    cursor: pointer;
+}
+
+.Comment-Form-right:hover #Comment-box{
+    display: block;
+    font-size: 23px;
+
+}
+
+.Comment-Form-right:hover #comment{
+    background: var(--Text-color-g-p);
+}
+
+/******<<<<<<<<<<<<<End Of right class Design >>>>>>>>>>>>>>***********************************************************************************************/
+
+/*Here is authors  class left design  **********************************************************************************************************************************************************/
+#author2{
+    margin-top: 6em;
+    position: relative;
+}
+.authors-Left{
+    position: relative;
+    margin: right 6em;
+    top: -56em;
+    left: 50em;
+    display: inline-block;
+    margin-bottom: 1em;
+
+}
+
+.IMGHOVER-Left{
+    top: 240px;
+    height: 1080px;
+    width: 900px;
+    opacity: .95;
+    right: 500px;
+}
+
+
+.IMGHOVER-Left:hover{
+    opacity: .75;
+}
+
+.authors-Profile-picture-left{
+    border-radius: 50%;
+    border: var(--Text-Color-h1) solid 3.2px;
+    position: relative;
+    right: 95em;
+    top: -60em;
+    padding: 0px 0px;
+
+}  
+.authors-profile-names-left{
+    font-size:55px;
+    position: relative;
+    top: -20.7em;
+    right: 8em;
+
+}
+.dateAndtime-left{
+    font-size:22px;
+    position: relative;
+    top: -55em;
+    right: 19.8em;
+
+}
+.authors-Title-left{
+    color: var(--Text-Color-a);
+     font-size:61px;
+     position: relative;
+    top: -19.2em;
+    right: 5.5em;
+}
+
+.authors-Title-left::first-line{
+    color: var(--Text-Color-g-h);
+}
+
+.authors-profile-paragraphs-left{
+    
+        font-size: 26px;
+        color: var(--Text-Color-h1);
+        position: relative;
+        top: -47em;
+        right: 25em;
+        justify-content: center;
+}
+
+.authors-profile-paragraphs-left::first-letter {
+    font-size: 300%;
+    position: relative;
+    
+    }
+
+
+
+.authors-Tags-List-left{
+    font-size: 22px;
+    display: inline-flex;
+    position: relative;
+    top: -59em;
+    right: 29em;
+    list-style: none;
+}
+
+.authors-Tags-List-left .tag-list {
+    position: relative;
+    right: 110px;
+}
+
+/*Here is comment form design  *****************************/
+            
+
+    
+.Comment-Form-left{    /*Form comment */
+    position: relative;
+    top: 9em;
+    right: 20em;
+    transform: translate(-35%,-25%);
+    transition: all 1s;
+    width: 230px;  /* i have made this width size 100px because i want it to make the back circle as you see on the screen  {So that are not an error }*/
+    height: 50px;
+    background:linear-gradient( 10deg,var(--Text-Color-y) ,  white, white  white, white no-repeat center  );
+    box-sizing: border-box;
+    border-radius: 25px;
+    border: 4px solid var(--Text-Color-g);
+    padding: 5px;
+}
+            
+#Comment-box-left{
+    position: relative;
+    top: -14.2px;
+    left: -13px;
+    width: 100%;
+    height: 40px;
+    line-height: 30px;
+    outline: 0;
+    border: 0;
+    display: none;
+    font-size: 1em;
+    border-radius: 20px;
+    padding: 0 15px;
+    display: block;
+    background-color: transparent;
+    font-size: 20px;
+
+}
+
+
+#comment{    /*this is the image inside comment form */
+    box-sizing: border-box;
+    padding: 0.05px 0.05px; 
+    width: 50px;
+    height: 45px;
+    position: absolute;
+    top: -15px;
+    right: 0;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 31px;
+    transition: all 1s;
+    background-color: var(--Text-Color-y);
+}
+
+.Comment-Form-left:hover{
+    border: thick solid var(--Text-color-g-p);
+    width: 430px;
+    cursor: pointer;
+}
+
+.Comment-Form-left:hover #Comment-box-left{
+    display: block;
+    font-size: 23px;
+
+}
+
+.Comment-Form-left:hover #comment{
+    background: var(--Text-color-g-p);
+}
+
+
+
+
+
+
+.interactive-with-left{
+
+    position: relative;
+    top: -70em;
+    right: 67em;
+    display: inline-flex;
+    background-color: transparent;
+}
+
+
+
+#like1{
+position: relative;
+right: 170px;
+height: 110px;
+width: 80px;
+
+}
+
+#share1{
+    position: relative;
+    left: 10px;
+    height: 110px;
+    width: 80px;
+    
+    }
+
+#Disliek1{
+    position: relative;
+    right: 90px;
+    height: 110px;
+    width: 80px;
+}
+    
+#author3 {
+    position: relative;
+        top: -132em;
+            right: 75px;
+            margin-bottom: -5em;}
+
+                
+
+                        
+
+#author4 {
+    position: relative;
+    top: -180em;
+    right: 80%; 
+    margin-bottom: -15em;
+
+} 
+    
+    
+    
+    
+    #author5 {
+          position: absolute;
+          top: 371em;
+          left: 0px;
+          margin-bottom: -420em
+    
+                } #author6 {
+                    position: absolute;
+                    top:452em;
+                    right: -500px;
+                    } #author7 {
+                        position: absolute;
+                        top: 519em;}
+
+                    
+                          
+                              
+                        
+#UI-UIX-AI-bottom{
+    height: 650px;
+    position: absolute;
+    right: 0px;
+    opacity: .80;
+    top:594em;
+ } 
+  #Title-Bottom{
+      font-size: 35px;
+      color: var(--Text-Color-g-h);
+      position:absolute;
+      top:278em;
+      left: 40px;
+  }
+#Title-Bottom::first-line{
+    font-size: 43px;
+    color: var(--Text-Color-a);
+}         
+                    
+                    
+                       
+                                                   
+                        
+/**********************************************<<<<<<<<<<FOOTER SECTION >>>>>>>>>>*******************************************/ 
+div{
+    margin-bottom: -15em;
+}
+footer{
+    border: thick solid var(--Text-Color-p);
+    background-color: var(--Text-color-g-p-f);
+    margin-bottom: -5em;
+    width: 99%;
+    height: 21em;
+    position: absolute;
+    top: 701em;
+    left: 0px;
+
+}
+
+#Go-to-Top{
+    height: 200px;
+    width: auto;
+    position: absolute;
+    top: 690em;
+    left: 50em;
+
+}   
+#Go-to-Top:hover{
+    position: absolute;
+    top: 688em;
+} 
+
+#Go-to-Next{
+    position: absolute;
+    top: 694.2em;
+    left: 70em;
+    height: 100px;
+    cursor:progress;
+
+}
+#Go-to-Next:hover{
+    position: absolute;
+    box-sizing: unset;
+   
+}
+
+#site-map{
+    height: 100px;
+    position: absolute;
+    top: 694.2em;
+    left: 45em;
+
+}
+
+#site-map:hover{
+    cursor: wait;
+    box-sizing: unset;
+}
+#p-footer  {
+    color: var(--Text-Color-y); 
+    font-size: 26px;
+    position: relative;
+    top: -1.5em;
+    left: 15em;
+    
+} 
+.C-footer {
+    color:var(--Text-Color-Le);
+    text-decoration: none;
+}   
+
+#p-footer :hover{
+    color: var(--Text-Color-ba);
+    font-size: 30px;
+    position: relative;
+    top: .5em;
+}
+
+#Follow-us {
+    
+    font-size: 19px;
+    position: absolute;
+    top: 1.5em;
+    left: 36em;
+    color:var(--Text-Color-h1);
+}
+
+.Social-US { 
+    top: 20em;
+    
+}
+
+
+ #copy{
+    position: relative;
+    top:-45px;
+    left: 12px;   
+}
+
+#powered{
+    position: relative;
+    top: -65px;
+    left: 6em;
+    color: var(--Text-Color-h1)} 

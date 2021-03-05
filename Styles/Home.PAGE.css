@@ -1,0 +1,888 @@
+@import url('https://fonts.googleapis.com/css2?family=Hammersmith+One&display=swap');
+
+:root{
+    --Desktop:(1920px);
+    --laptop:(991px);
+    --Text-Color-h1: #202020;
+    --Text-Color-g: #707070;
+    --Text-Color-a: #CADDED;
+    --Text-Color-y: #FFDF6C;
+    --Text-Color-ba: #229151;
+    --Text-Color-g-h: #833820;
+    --Text-color-g-p: #CE6949;
+    --Text-Color-Le:  lemonchiffon;
+    --Text-color-g-p-f: #c03d3d;
+    --Back-Color-Blue: rgb(214, 239, 252);
+    --Back-Color-pink: rgb(235, 160, 183);
+}
+
+*{
+
+    margin: 0em;
+    padding: 1em 0.2em;
+    box-sizing: border-box;
+    font-family: 'Hammersmith One', sans-serif;
+}
+
+body{
+    width: 100%;
+    height: 187.9vh;
+    margin-bottom: 0em;
+   
+}
+
+
+a{ text-decoration: none;}
+
+
+
+/***************************************************************<<<<<<<<<LOGIN FORM >>>>>>>>>>*******************************************************************************/
+
+#show-log:checked ~ #LOGIN-FORM1{ /*Display form*/
+    
+    display: inline-flex;
+}
+
+#show-log:checked ~ #login-PopUp {  display: none ;}
+#show-log:checked ~ #SignUp-PopUp{  display: none ;} /* i have disable the sign up button because it's looks bad when the 'login form' opens*/ 
+
+
+ #login-PopUp{ /*button*/
+     position: absolute;
+     top: 20em;
+     left: 5em;
+     border: solid var(--Text-Color-h1) 3.1px;
+     color: var(--Text-Color-h1);
+     background: var(--Text-Color-y);
+     border-radius: 42px;
+     
+     font-size: 40px;
+     font-weight: 900;        
+     padding: 10px 70px;
+     outline-style: none;
+
+ }
+
+ #login-PopUp:hover{
+     left: 5.5em;
+     padding: 13px 67px;
+     background-color: var(--Text-Color-y);
+     border: 2px solid var(--Text-Color-p-y);
+     color: var(--Text-Color-p-y);
+ }
+
+
+#LOGIN-FORM1{
+        position: fixed;
+        z-index: 1;
+        transition: all 3s;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        display: inline-block;
+        background-color: white;
+        color: var(--Text-Color-h1);
+        padding: 30px;
+        box-shadow: 0 0 8px rgb (0,0,0.1);
+        border: royalblue solid 10px;
+        display: inline-flex;
+        height: 650px;
+        width: 1150px;
+}
+
+ #LOGIN-FORM1{   
+     display: none; 
+}  
+
+
+#Logo-Gif{  /*Login animation Form*/
+    height: 662px;
+    width: 630px;
+    position: relative;
+    top: -46px;
+    right: 35px;
+    
+}
+
+
+
+#btn-close-log{
+    position: absolute;
+    top: -1.2em;
+    right: 0em; 
+    font-size: 4em;
+    color: var(--Text-Color-y);
+    font-weight:800;
+    cursor: pointer;
+}
+
+#btn-close-log:hover{
+color: var(--Text-Color-p-y);
+transform: translate(0%, 0% , 0%);
+transform: scale(3deg -2% , -5%);
+rotate: 2px;
+}
+
+.title{ /*head */
+    font-size: 50px;
+    font-weight: 700;
+    position: relative;
+    top: -30px;
+    right: 8px;
+}
+
+#email-text , #password { /*title*/
+    font-weight: 600;
+    font-size: 25px;
+    position: relative;
+    top: 5px;
+    right: 39px;
+
+}
+                
+
+#input-email , #input-password {  /*Text Box */
+    position: relative;
+    right: 39px;
+    width: 450px;
+    font-size: 20px;
+    border-radius: 10px;
+    outline: none;
+    border: silver  1px solid;
+
+}
+
+
+#login-btn {
+    width: 300px;
+    height: 75px;
+    border: solid var(--Text-Color-h1) 1.1px;
+    border-radius: 42px;
+    background: var(--Text-Color-y);
+    position: relative;
+    left: 30px;
+    font-size: 35px;
+    font-weight: 900;
+    padding-top: 19px;
+    outline-style: none;
+}
+#login-btn:hover{
+    background: var(--Text-color-g-p-f);
+    color: whitesmoke;
+    outline-style: none;
+    border: none;
+}
+
+
+#Forgot {
+    font-size: 23.5px;
+    position: relative;
+    left: 100px;
+    color: var(--Text-Color-p-y);
+    font-weight: bold;
+}
+#signup-donot{
+    font-size: 22px;
+    position: relative;
+    left: 20px; 
+    font-weight: bold;
+}
+
+#signup-donot a{
+    color: var(--Text-Color-p-y);
+}
+#LOGIN-FORM1  a:hover{
+    text-decoration: underline;
+    position: relative;
+    color: rgb(29, 29, 145);
+}
+
+/*********************************************<<<<<<<<<<*Sign up *Form>>>>>>>>>>*********************************************/
+
+
+
+
+#show-sign:checked ~ #SIGN-UP-FORM{ /*Display form*/
+    
+    display: inline-flex;
+}
+
+#show-sign:checked ~ #login-PopUp{  display: none ;}
+#show-sign:checked ~ #SignUp-PopUp{  display: none ;} 
+
+#SignUp-PopUp{
+   position: absolute;
+    top: 20em;
+    left: 15em;
+    border: solid var(--Text-Color-h1) 3.1px;
+    color: var(--Text-Color-h1);
+    background: var(--Text-Color-y);
+    border-radius: 42px;
+    font-size: 40px;
+    font-weight: 1000;        
+    padding: 10px 60px;
+    outline-style: none;
+
+}
+
+#SignUp-PopUp:hover{
+    left: 15.1em;
+    padding: 13px 67px;
+    background-color: var(--Text-Color-y);
+    border: 2px solid var(--Text-Color-p-y);
+    color: var(--Text-Color-p-y);
+}
+
+
+
+#SIGN-UP-FORM{
+        transition: all 3s;
+        position: fixed;
+        z-index: 1;
+        top: 45%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        display: inline-block;
+        background-color: white;
+        color: var(--Text-Color-h1);
+        padding: 30px;
+        box-shadow: 0 2px 8px silver;
+        border: royalblue solid 10px;
+        display: inline-flex;
+        height: 800px;
+        width: 1300px;
+}
+
+ #SIGN-UP-FORM{   
+    display: none; 
+}   
+
+
+#sign-up-Gif{  /*Login animation Form*/
+    height: 810px;
+    width: 635px;
+    position: relative;
+    top: -45px;
+    right: 33px;
+    
+}
+
+#btn-close-sign-up{
+    position: absolute;
+    top: -1.2em;
+    right: 0em; 
+    font-size: 4em;
+    color: var(--Text-Color-y);
+    font-weight:800;
+    cursor: pointer;
+}
+
+#btn-close-sign-up:hover{
+color: lightpink;
+}
+
+#form-all-sign-up .title{ /*head */
+    font-size: 50px;
+    font-weight: 700;
+    position: relative;
+    top: -30px;
+    left: 60px;
+}
+#F-L-Name{
+    display: inline-flex;
+}
+
+#name-label{
+    font-size: 25px;
+    font-weight: 600;
+    position: absolute;
+    top: 150px;
+    right : 565px;
+}
+#First-name, #last-name{
+        font-size: 23px;
+        font-weight: 600;
+        position: relative;
+        right: 35px;
+}
+#input-FName ,#input-LName{
+    outline: none;
+    height: 37px;
+    width: 200px;
+    position: relative;
+    right: 35px;
+    top: 20px;
+    border-radius: 10px;
+    border: silver  1px solid;
+
+}
+
+#User-name{
+    font-size: 25px;
+    font-weight: 600;
+    position: absolute;
+    top: 265px;
+    right: 510px;
+    
+}
+#input-User-Name{
+    outline: none;
+    height: 42px;
+    width: 400px;
+    position: absolute;
+    top: 280px;
+    right: 82px;
+    border: silver  1px solid;
+    border-radius: 10px;
+
+}
+#email-text-sign-up , #password-sign-up { /*title*/
+    font-weight: 600;
+    font-size: 25px;
+    position: relative;
+    top: 50px;
+    right: 40px;
+
+}
+                
+
+#input-email-sign-up , #input-password-sign-up ,#input-password-sign-up-re{  /*Text Box */
+    position: relative;
+    top: 50px;
+    right: 32px;
+    width: 560px;
+    height: 64px;
+    font-size: 20px;
+    border-radius: 12px;
+    outline: none;
+    border: silver  1px solid;
+
+}
+
+
+#Sign-up-btn{
+    width: 300px;
+    height: 75px;
+    border: solid var(--Text-Color-h1) 1.1px;
+    border-radius: 42px;
+    background: var(--Text-Color-y);
+    position: absolute;
+    top: 675px;
+    right: 200px;
+    font-size: 35px;
+    font-weight: 900;
+    padding-top: 19px;
+    outline-style: none;
+}
+#Sign-up-btn:hover{
+    background: var(--Text-color-g-p-f);
+    border: none;
+}
+
+#Sign-up-btn  a{
+    color: black;
+}
+
+
+/*  end of login and sign up btn  */
+#head-Logo{
+    position: fixed ;
+    top: -33px;
+    left: -20px;
+    box-sizing: border-box;
+    width: 135px;
+    height: 170px;
+}
+
+/********************************************<<<<<<<<<<<<<<<<<<<<<SIDE NAVIGATION BAR>>>>>>>>>>>>>>>>>>>>>>>>>>>>**************************************************************/
+
+#Nav-Fixed-Side{
+    position: fixed;
+    top: -20px;
+    left: -22px;
+    height: 102%;
+    width: 110px;
+    background: transparent;
+    transition: all 3.5s;
+    opacity: .10;
+    z-index: 1;
+    margin-left:1.5em ;
+}
+#Nav-Fixed-Side:hover{
+    opacity: .85;
+    background: linear-gradient( 5.6deg, #dfeffd, #e1edf8 ) no-repeat center;
+      transform: all 3s;
+}
+
+
+
+
+#form-search-nav1{
+    position: relative;
+    top: 200px;
+    left: 2em;
+    transform: translate(-1%,50%);
+    transition: all 2.1s;
+    width: 50px;
+    height: 80px;
+    box-sizing: border-box;
+    border-radius: 50px;
+    padding: 5px;
+}
+
+#Input-Search-nav1{
+    background: transparent;
+    position: relative;
+    top: -14.2px;
+    left: -13px;
+    width: 98%;;
+    height: 80px;
+    line-height: 30px;
+    outline: 0;
+    border: 0;
+    display: none;
+    font-size: 2.1em;
+    border-radius: 50px;
+    text-align: center;
+}
+
+#Search-icon-nav{
+    box-sizing: border-box;
+    padding: 0px 0px; 
+    width: 78px;
+    height: 75px;
+    position: absolute;
+    top: -15px;
+    right: 0;
+    border-radius: 50%;
+    transition: all 2s;
+    cursor:zoom-in;
+}
+
+#form-search-nav1:hover{
+    background: white;
+    border: thick solid var(--Text-color-g-p);
+    width: 600px;
+    cursor: pointer;
+
+}
+
+#form-search-nav1:hover #Input-Search-nav1{
+    display: block;
+}   
+
+
+ /* #B-ST{
+    position: relative;
+    right: 19.11px;
+    top: 10em;
+    color: var(--Text-Color-g-h);
+    font-size: 28px;
+}
+#B-ST:hover{             TODO:this is text inside the nav fixed i have hide it Temporary nav support text
+    color: var(--Text-Color-a);
+    cursor: help;
+}  */
+
+#Go-support-nav{
+    position: relative;
+    top: 26em;
+    right: 15px;
+    height: 133px;
+    cursor: help;
+}
+#Go-support-nav:hover{
+    opacity: .50;
+    padding-top: 10px;
+    
+}
+
+/* #B-HE{ TODO:this is text inside the nav fixed i have hide it Temporary nav Home text
+    font-size: 33px;
+    position: relative;
+    right: 12px;
+    top: 10em;
+    color: var(--Text-Color-g-h);
+    font-weight: 900;
+} 
+#B-HE:hover{
+    color: var(--Text-Color-a);
+} */
+
+
+#Go-home-nav{
+    overflow-x: hidden;
+    position: relative;
+    right: 22.96px;
+    top: 35em;
+    height: 148px;
+}
+#Go-home-nav:hover{
+    opacity: .85;
+    padding-top: 10px;
+
+}
+
+
+
+
+/****************************************************Header***************************************************************************/
+
+#Logo{
+    /* This positions and styles on screen size 1920 * 911 ratio 16/9 */
+    position: relative;
+    top: -110px;
+    right: 3em;
+    height: 110%;
+    width: 55%;
+}
+ #Logo:hover{
+    opacity: 0.75;
+
+} 
+
+#home-nav{
+    margin-left: 4em;
+    position: absolute;
+    top: 0px;
+    left: 0em;
+    font-size: 31px;
+    font-weight: 700;
+
+}
+
+#home-nav a{ 
+    color: black;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 1px 17px
+} 
+
+#home-nav .CLICKED-HiGHLIGHT {
+  color: var(--Text-color-g-p-f);
+  text-shadow: 2.2px 2px black;
+
+}
+
+#home-nav .CLICKED-HiGHLIGHT:hover {
+    color: var(--Text-Color-ba);
+    text-shadow: 4px 7px black;
+  }
+  
+#home-nav :hover {
+    color: var(--Text-color-g-p);
+    position: relative;
+    top: .6em;
+    opacity: 0.65;
+    font-size: 35px;
+
+
+}
+#home-nav a:hover {
+    text-shadow: 3px 4px #202020;
+    }
+ 
+
+
+
+#Logo-text{
+    text-transform: uppercase; 
+    color: #0078D7;
+    position: absolute;
+    left: 4.4em;
+    top: 11.4em;
+    font-size: 75px;  
+    
+}
+#Logo-text::first-letter{
+    color:  #c03d3d;
+    font-size: 85px;
+    font-weight: 900;
+}
+
+
+#say-Title{
+    color:var(--Text-color-g-p);
+    position: absolute;
+    left: 10em;
+    top: 28em;
+    font-size: 35px;  
+
+}
+
+#Logo-Hov:hover{
+    font-size: 20px;
+    position: relative;
+    right: 2em;
+}
+
+
+#and1{
+    position: absolute;
+    width: 17%;
+    top: 53.9em;
+    left: 13.1em;
+} 
+#Move-inside{
+    position: relative;
+    top: -43px;
+    left: 30px;
+}
+
+
+
+#Short-title{
+    color:var(--Text-Color-g-h);
+    position: absolute;
+    left: 14em;
+    top: 35em;
+    font-size:32px;  
+    justify-content: space-between;
+}
+
+
+/* End of top section  **********************************************************************************************************/
+
+
+
+
+
+
+
+ /*                       *****=======<><><><><>---- Top stories section   ----<><><><>=====*****                                */
+
+
+
+ #Stories-link{
+
+    position: absolute;
+    top: 5em;
+    right: 1em;
+    font-size: 20px;
+    color: #c03d3d;
+    text-decoration:  underline ;
+
+ }
+ #Top-Stories-h1{
+    position: absolute;
+    top: .29em;
+    right: 17em;
+    font-size: 35px;
+text-decoration: underline ;
+
+
+ }
+
+ .right-Section-Top-Srories{
+     position: absolute;
+     top: 0em;
+     left: 63em;
+     border-left: solid 10px #c03d3d;
+     height: 150vh;
+     overflow-x: hidden;
+
+
+ }
+ .right-Section-Top-Srories::-webkit-scrollbar {
+    display: none;
+}
+
+ .authors-Home-Top-Stories{
+    display: inline-flex;
+    position: relative;
+    right: 0em ;
+    top: 10em;
+
+
+ }
+ .Authors-Name{
+
+    font-size: 25px;
+    position: relative;
+    left: 21.2em;
+    top: 0em;
+ }
+ .DateTimeAuthors{
+
+    position: absolute;
+    right: -12.7em;
+    top: 0em;
+ }
+ .Authors-Profile-picture{ /*this is profile picture design */
+     height: 100px;
+     width: 90px;
+     border-radius: 50%;
+     border: solid 3px ;
+     padding: 0;
+     position: absolute;
+     left: 27em;
+     top: -1em;
+     
+ }
+ .Authors-Stories-img{ /*this is profile picture design */
+     height: 410px;
+     position: absolute;
+     left: 1em;
+     top: -1em;
+ }
+ .Authors-Paragraphs  {  /*this is paragraph  design */
+    font-size: 22px;
+     position: relative;
+     top: 3.1em;
+      left:275.2px; 
+
+     
+ }
+
+ .Authors-Tags-list{
+     font-size: 18px;
+    position: absolute; 
+    top: 16em;
+    right: -15.8em;
+    list-style: none;
+    display: inline-flex; /*TODO: Check if it's correct or not */ 
+    
+ }
+
+
+ .Authors-Paragraphs  b {
+     font: bolder;
+      font-size: 24px;
+      color: #c03d3d;
+ }
+
+
+ /* authors adjustment  top position */
+ #Author2-top-stories {
+    position: relative;
+    top: 21em;
+
+} 
+#Author3-top-stories { 
+  position: relative;
+    top: 32em;
+} #Author4-top-stories {
+    position: relative;
+    top: 43em;
+}
+#Author5-top-stories{
+    position: relative; 
+    top: 53em;
+}
+#Author6-top-stories {
+     position: relative;
+    top: 63em;
+ }
+ #Author7-top-stories {position: relative;
+    top: 73em;
+}
+#Author8-top-stories {position: relative;
+    top: 83em;
+}
+#Author9-top-stories{
+    position: relative;
+    top: 93em;
+}
+ 
+
+
+ /*                       *****=======<><><><><>---- End of Top stories section   ----<><><><>=====*****                                */
+
+hr{
+    border-top:  3px solid  brown;
+    border-left:none ;
+    border-bottom: none ;
+    border-right: none ;
+    position: absolute;
+    top:36.5em;
+    width: 52em;
+    left: 1em;
+}
+#hr2{
+top: 64em;
+}#hr3{
+    top: 92em;
+
+}#hr4{
+ top:119em;
+}#hr5{
+    top:146em;
+}#hr6{
+    top:172.7em;
+}#hr7{
+    top:198.9em;
+}#hr8{
+    top:226em;
+}#hr9{
+    top:252.5em;
+}
+
+
+
+
+
+
+
+
+ /*  footer section   */
+footer{
+    position: absolute;
+    top: 95em;
+    left: 0;
+    width: 100%;
+    height: 19em;
+    border: thick solid lightgray;
+    overflow-x: hidden;
+    overflow: hidden;
+    background: #c03d3d
+}
+
+
+#p-footer  {
+    color: var(--Text-Color-y); 
+    font-size: 28px;
+    transform: translate(20% , -10%);
+    font-weight: bolder;
+   
+} 
+.C-footer { /*Links*/
+    color: rgb(33, 168, 231);
+    text-decoration: none;
+}   
+
+#p-footer :hover{
+    color: rgb(250, 196, 96);
+    text-shadow: 3px 3.5px black;
+    font-size: 30px;
+    position: relative;
+    top: 10px;
+   
+}
+
+#Follow-us {
+    font-size: 19px;
+    transform: translate(35%, 0%);
+    color:var(--Text-Color-h1);
+}
+
+.Social-US { 
+    height: 95px;
+    position: relative;
+    top: -2em;
+    
+}
+
+
+ #copy{
+    position: relative;
+    top:-45px;
+    left: 12px; 
+    color: gray;  
+}
+
+#powered{
+    position: relative;
+    top: -65px;
+    left: 6em;
+    color: gray;
+}

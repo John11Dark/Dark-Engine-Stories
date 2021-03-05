@@ -1,0 +1,1070 @@
+@import url('https://fonts.googleapis.com/css2?family=Hammersmith+One&display=swap');
+:root{
+    --Desktop:(1920px);
+    --laptop:(991px);
+    --Text-Color-h1: #202020;
+    --Text-Color-g: #707070;
+    --Text-Color-a: rgb(229, 252, 252) ;
+    --Text-Color-y: #FFDF6C;
+    --Text-Color-p: rgb(223, 76, 100);
+    --Text-Color-p-y: rgb(255, 93, 120);
+    --Text-Color-Le:  lemonchiffon;
+    --Text-color-lib : rgb(69, 147, 189);
+    --Back-Color-Blue: rgb(214, 239, 252);
+    --Back-Color-pink: rgb(235, 160, 183)
+    ;
+}
+
+    /* This positions and styles on screen size 1920 * 1080 ratio 16/9 */
+
+*{
+    margin: 0em;
+    padding: 1em 1em;
+    box-sizing: border-box;
+    font-family: 'Hammersmith One', sans-serif;
+}
+
+body{
+ 
+    width: 100%;
+    overflow-x: hidden;
+}
+
+a{ text-decoration: none;}
+
+#Logo{
+    position: relative;
+    top: -110px;;
+    right: 100px;
+    height: 105%;
+    width: 65%;
+}
+#Hint1{
+    position: absolute;
+    height: 850px;
+    top: 2em;
+    left: 53em;
+    opacity:.90;  
+}
+
+
+
+nav{
+    position: absolute;
+    top: 0px;
+    left: 0em;
+    font-size: 28px;
+    color: var(--Text-Color-h1);
+
+}
+
+nav a{ color: var(--Text-Color-h1);
+text-decoration: none;
+text-transform: uppercase;
+padding: 1px 17px;
+font-weight: bold;
+}
+
+nav :hover {
+    color: var(--Text-Color-y);
+    position: relative;
+    top: .5em;
+    opacity: 0.65;
+}
+#Currently-active{
+    color: red;
+}
+
+/***********************************************************<<<<<Search Form>>>>>****************************************************************/
+#form-search-box{
+    position: absolute;
+    top: 3em;
+    right: 4em;
+    transform: translate(-30%,-50%);
+    transition: all 2s;
+    width: 200px;
+    height: 50px;
+    box-sizing: border-box;
+    border-radius: 25px;
+    border: 4px solid var(--Text-Color-y);
+    padding: 5px;
+}
+#Input-Search-box{
+    position: relative;
+    top: -3.2px;
+    left: -1px;
+    width: 100%;;
+    height: 40px;
+    line-height: 30px;
+    outline: 0;
+    border: 0;
+    display: none;
+    font-size: 1.15em;
+    border-radius: 20px;
+    padding: 0 20px;
+}
+
+#Search-icon{
+    box-sizing: border-box;
+    padding: 0.05px 0.05px; 
+    width: 45px;
+    height: 45px;
+    position: absolute;
+    top: -2px;
+    right: 0;
+    border-radius: 50%;
+    color: #b4346a;
+    text-align: center;
+    font-size: 31px;
+    transition: all 1s;
+}
+
+#form-search-box:hover{
+    border: thick solid var(--Text-Color-p);
+    width: 500px;
+    cursor: pointer;
+}
+
+#form-search-box:hover #Input-Search-box{
+    display: block;
+}
+
+#form-search-box:hover #Search-icon{
+    background: var(--Text-Color-p);
+}
+
+
+
+/***************************************************************<<<<<<<<<LOGIN FORM >>>>>>>>>>*******************************************************************************/
+
+#show-log:checked ~ #LOGIN-FORM1{ /*Display form*/
+    
+    display: inline-flex;
+}
+
+#show-log:checked ~ #login-PopUp {  display: none ;}
+#show-log:checked ~ #SignUp-PopUp{  display: none ;} 
+
+
+ #login-PopUp{ /*button*/
+     position: absolute;
+     top: 22.4em;
+     left: 6.1em;
+     border: solid var(--Text-Color-h1) 3.1px;
+     color: var(--Text-Color-h1);
+     background: var(--Text-Color-y);
+     border-radius: 42px;
+     font-size: 40px;
+     font-weight: 900;        
+     padding: 12px 52px;
+     outline-style: none;
+
+ }
+
+ #login-PopUp:hover{
+     left: 6.2em;
+     box-shadow: 2px 3px  #b4346a;
+     padding: 14px 55px;
+     background-color: var(--Text-Color-y);
+     border: 2px solid var(--Text-Color-p-y);
+     color: var(--Text-Color-p-y);
+ }
+
+
+#LOGIN-FORM1{
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transition: all 3s;
+        transform: translate(-50%, -50%);
+        display: inline-block;
+        background-color: white;
+        color: var(--Text-Color-h1);
+        padding: 30px;
+        box-shadow: 0 0 8px rgb (0,0,0.1);
+        border: royalblue solid 10px;
+        display: inline-flex;
+        height: 650px;
+        width: 1150px;
+        z-index: 1;
+}
+
+ #LOGIN-FORM1{   
+    display: none;
+}  
+
+
+#Logo-Gif{  /*Login animation Form*/
+    height: 660px;
+    width: 630px;
+    position: relative;
+    top: -45px;
+    right: 46px;
+    
+}
+
+
+
+#btn-close-log{
+    position: absolute;
+    top: -1.2em;
+    right: -1em; 
+    font-size: 4em;
+    color: var(--Text-Color-y);
+    font-weight:800;
+    cursor: pointer;
+}
+
+#btn-close-log:hover{
+color: var(--Text-Color-p-y);
+transform: translate(0%, 0% , 0%);
+transform: scale(3deg -2% , -5%);
+}
+
+.title{ /*head */
+    font-size: 50px;
+    font-weight: 700;
+    position: relative;
+    top: -30px;
+    right: 8px;
+}
+
+#email-text , #password { /*title*/
+    font-weight: 600;
+    font-size: 25px;
+    position: relative;
+    top: 5px;
+    right: 60px;
+
+}
+                
+
+#input-email , #input-password {  /*Text Box */
+    position: relative;
+    right: 60px;
+    width: 450px;
+    font-size: 20px;
+    border-radius: 10px;
+    outline: none;
+    border: silver  1px solid;
+
+}
+
+
+#login-btn {
+    width: 300px;
+    height: 75px;
+    border: solid var(--Text-Color-h1) 1.1px;
+    border-radius: 42px;
+    background: var(--Text-Color-y);
+    position: relative;
+    left: 30px;
+    top: 10px;
+    font-size: 35px;
+    font-weight: 900;
+    padding-top: 19px;
+    outline-style: none;
+}
+#login-btn:hover{
+    background: var(--Text-Color-p-y);
+    color: whitesmoke;
+    outline-style: none;
+    border: none;
+}
+
+
+#Forgot {
+    font-size: 23.5px;
+    position: relative;
+    top: 11.2px;
+    left: 100px;
+    color: var(--Text-Color-p-y);
+    font-weight: bold;
+}
+#signup-donot{
+    font-size: 22px;
+    position: relative;
+    left: 20px; 
+    font-weight: bold;
+}
+
+#signup-donot a{
+    color: var(--Text-Color-p-y);
+}
+#LOGIN-FORM1  a:hover{
+    text-decoration: underline;
+    position: relative;
+    color: rgb(29, 29, 145);
+}
+
+/*********************************************<<<<<<<<<<*Sign up *Form>>>>>>>>>>*********************************************/
+
+
+#show-sign:checked ~ #SIGN-UP-FORM{ /*Display form*/
+    
+    display: inline-flex;
+}
+
+#show-sign:checked ~ #login-PopUp{  display: none ;}
+#show-sign:checked ~ #SignUp-PopUp{  display: none ;} 
+
+#SignUp-PopUp{
+    position: absolute;
+    left: 13.7em;
+    top: 22.4em;
+    border: solid var(--Text-Color-h1) 3.1px;
+    color: var(--Text-Color-h1);
+    background: var(--Text-Color-y);
+    border-radius: 42px;
+    font-size: 40px;
+    font-weight: 900;        
+    padding: 10px 40px;
+    outline-style: none;
+
+}
+
+#SignUp-PopUp:hover{
+    left: 13.8;
+    box-shadow: 2px 3px  #b4346a;
+    padding: 12px 42px;
+    background-color: var(--Text-Color-y);
+    border: 2px solid var(--Text-Color-p-y);
+    color: var(--Text-Color-p-y);
+}
+
+
+
+#SIGN-UP-FORM{
+        transition: all 3s;
+        position: fixed;
+        top: 45%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        display: inline-block;
+        background-color: white;
+        color: var(--Text-Color-h1);
+        padding: 30px;
+        box-shadow: 0 2px 8px silver;
+        border: royalblue solid 10px;
+        display: inline-flex;
+        height: 800px;
+        width: 1250px;
+        z-index: 1;
+
+}
+
+ #SIGN-UP-FORM{   
+    display: none; 
+}   
+
+
+#sign-up-Gif{  /*Login animation Form*/
+    height: 810px;
+    width: 635px;
+    position: relative;
+    top: -45px;
+    right: 42px;
+    
+}
+
+#btn-close-sign-up{
+    position: absolute;
+    top: -1.2em;
+    right: -0.9em; 
+    font-size: 4em;
+    color: var(--Text-Color-y);
+    font-weight:800;
+    cursor: pointer;
+}
+
+#btn-close-sign-up:hover{
+color: lightpink;
+}
+
+#form-all-sign-up .title{ /*head */
+    font-size: 50px;
+    font-weight: 700;
+    position: relative;
+    top: -30px;
+    left: 50px;
+}
+#F-L-Name{
+    display: inline-flex;
+}
+
+#name-label{
+    font-size: 25px;
+    font-weight: 600;
+    position: absolute;
+    top: 150px;
+    right : 500px;
+}
+#First-name, #last-name{
+        font-size: 23px;
+        font-weight: 600;
+        position: relative;
+        right: 87px;
+}
+#input-FName ,#input-LName{
+    outline: none;
+    height: 37px;
+    width: 200px;
+    position: relative;
+    right: 87px;
+    top: 20px;
+    border-radius: 10px;
+    border: silver  1px solid;
+
+}
+
+#User-name{
+    font-size: 25px;
+    font-weight: 600;
+    position: absolute;
+    top: 250px;
+    right: 440px;
+    
+}
+#input-User-Name{
+    outline: none;
+    height: 42px;
+    width: 400px;
+    position: absolute;
+    top: 270px;
+    right: 35px;
+    border: silver  1px solid;
+    border-radius: 10px;
+
+}
+#email-text-sign-up , #password-sign-up { /*title*/
+    font-weight: 600;
+    font-size: 25px;
+    position: relative;
+    top: 20px;
+    right: 90px;
+
+}
+                
+
+#input-email-sign-up , #input-password-sign-up ,#input-password-sign-up-re{  /*Text Box */
+    position: relative;
+    top: 20px;
+    right: 60px;
+    width: 560px;
+    height: 64px;
+    font-size: 20px;
+    border-radius: 12px;
+    outline: none;
+    border: silver  1px solid;
+
+}
+
+
+#Sign-up-btn{
+    width: 300px;
+    height: 75px;
+    border: solid var(--Text-Color-h1) 1.1px;
+    border-radius: 42px;
+    background: var(--Text-Color-y);
+    position: absolute;
+    top: 625px;
+    right: 200px;
+    font-size: 35px;
+    font-weight: 900;
+    padding-top: 19px;
+    outline-style: none;
+}
+#Sign-up-btn:hover{
+    background: var(--Text-Color-p-y);
+    color: whitesmoke;
+    outline-style: none;
+    border: none;
+}
+
+#Sign-up-btn  a{
+    color: black;
+}
+
+/*****************************************<><><><><><><><><>====----- end of sign up page -------==========<><><><><><><><><************************/
+
+#say-title >  B{
+    font-weight: bolder;
+    color: var(--Text-Color-y);
+}
+
+
+#say-Title{
+    color:var(--Text-Color-y);
+    position: absolute;
+    top: 15.5em;
+    left: 4em;
+    font-size: 45px;  
+    text-shadow: -0.5px 3px black; 
+
+}
+
+#Short-title{
+    color:var(--Text-Color-p);
+    position: absolute;
+    left: 1250px;
+    top: 23.8em;
+    font-size: 31px;  
+}
+
+
+#stories-Example{
+position: absolute;
+top: 120em;
+
+}
+
+
+#Top-Stories{
+    text-decoration: underline;
+    position: relative;
+    top: -15.5em;
+    left: 20px;
+    color: var(--Text-Color-h1);
+    font-size: 50px;
+    margin-bottom: 0em;
+}
+
+#View-all{
+    
+    position: relative;
+    top: 10.9em; 
+    left :82em;
+    font-size: 20px;
+    color: var(--Text-Color-g);
+}
+
+
+#All-in-flex{
+    position: relative;
+    top: -57.5em;
+    display: inline-flex;
+}
+ li  { display: inline-flex;}
+
+.Post-img{
+    position: relative;
+    top: -40px;
+    left: 15px;
+}
+
+.authors  {
+    position: relative;
+    top: -130px;
+    right: 2em;
+    display: inline-flex;
+    align-items: center;
+}
+.authors img {
+    height: 120px;
+    position: relative;
+    top: 10px;
+    left: 2em;
+    margin-top: 5px;
+    margin-bottom: 15px;
+
+}
+
+.Stories-Active-bottom .date {
+    position: relative;
+    top: -220px;
+    left: 10em;
+    font-size: 15px;
+    color: var(--Text-Color-g);
+}
+
+.Stories-Active-bottom{
+    position: relative;
+    top: 25px;
+    margin: 1em;
+    border: thick solid var(--Text-Color-h1)  ;
+    background: var(--Text-Color-y);
+    font-size: 25px;
+    height: 995px;
+}
+
+
+.Stories-Active-bottom ul , li { 
+    position: relative; 
+    top: -15em;
+    left: 3em;
+    font-size: 18px;    
+}
+
+
+
+.Stories-Active-bottom ul {
+    position: relative; 
+    top: -13em;
+    left: 35px;
+    font-size: 21px;    
+    height: 0px;
+}
+
+
+
+
+.Paragraph-user-left-bottom {
+    color: var(--Text-Color-p-y);
+    position: relative;
+    top: -250px;
+    left: 30px;
+    justify-content: left;
+    align-content: flex-end;
+}
+
+
+.interactive-with{
+    display: inline;
+    position: relative;
+    top: 8em;
+    right: 70px;
+}
+#share{
+position: relative;
+top: -8.5em;
+left: 16em;
+}
+#Comment-box{
+    position: absolute;
+    width: 390px;
+    top: -16.2em;
+    left: -8em;
+    text-align: center;
+    font-size: 32px;
+    height: 10px;
+    outline: none;
+    color: var(--Text-Color-p);
+    border: var(--Text-Color-h1) thick solid;
+    border-radius: 30px;
+}
+
+
+/* extra work */ 
+
+
+
+#About-Absolute{
+    
+    width: 100%;
+    position: absolute;
+    top: 155em;
+}
+
+#About-Extra{
+    
+    position: absolute;
+    top: 0em;
+}
+
+ #Our-mission{
+    font-size: 53px;
+    position: relative;
+    left: 12.11em;
+    color: var(--Text-Color-g);
+}
+
+#Our-text b{
+    position: relative;
+    font-size: 26px;
+    left: 26.5em;
+    top: -2em;
+    color: var(--Text-Color-p);
+
+}
+
+#Our-text-bottom {
+    position: relative;
+    font-size: 26px;
+    left: 27.2em;
+    top:-3em;
+    color: var(--Text-Color-p);
+
+}
+
+
+#About-text-border{
+    position: relative;
+    top: -3em;
+    background-color: azure;
+    border: thick var(--Text-Color-p) solid;
+    margin-left: 30em;
+    margin-right: 30em ;
+    width: 55em;
+    height: 715px;
+    border-radius: 50px;
+}
+#About-text{
+    font-size: 30px;
+    position: relative;
+    top: -180px;
+    margin: 2.5em;
+    line-height: 32px;
+    text-align: center;
+    color: var(--Text-Color-h1);
+}
+#About-us-Head{
+    font-size: 40px;
+    color: var(--Text-Color-y);
+    position: relative;
+    left: 36%;
+    top: -40px; 
+}  
+
+#Next-about-img1{
+    position: relative;
+    top: 51em;
+    left: 37em;
+} 
+
+
+
+
+ 
+#All-Flex-Us{
+    position: absolute;
+    top: 26em;
+    display: inline-block;
+    font-size: 65px;
+    height: 35em;
+}
+
+#All-Flex-Us p{
+    font-size: 31px;
+    font-weight: 900;
+    border: black thin solid;
+    
+} 
+
+#Hint2{
+    height: 850px;
+    position: relative;
+    left: 11em;
+}
+#Share-with-us{
+ position: relative;
+ top: -7.1em;
+ left: 1em;
+ text-shadow:3px 3.5px rgb(252, 84, 112);
+
+}
+
+#Share-with-us-p{
+    position: relative;
+    top: -26em;
+    left: 2.9em;
+    text-align: center;
+    width: 26em;
+    background: rgb(250, 250, 236);
+   }
+    
+   
+   
+   /*here is hint 3 image and text */
+
+#Hint3{
+    height:800px;
+    position: relative;
+    top: -10em;
+    right: 3em;
+}
+
+#Follow-us-book{
+    color: white;
+    position: relative;
+    top: -16.6em;
+    left: 9em;
+    -webkit-text-stroke: .01px var(--Text-Color-p) ;
+    text-shadow:3px 3.5px black;
+}
+
+#Follow-us-book-p{
+    color: var(--Text-Color-p);
+    position: relative;
+    top: -56em;
+    left: 31em;
+    width: 26em;
+    height: 12.5em;
+    text-align: center;
+    color: black;
+    background: rgb(250, 250, 236);
+
+}
+#Social-Follow-side-Fix { /*icons*/
+    position: absolute;
+    top: 21em;
+    right: -7em;
+    display: inline-flex;
+}
+ #Social-Follow-side-Fix a{
+    padding: 0em 0em 0em;
+    width: 100px;
+    height: 50px;
+
+} 
+
+
+
+
+    /* here is hint 4 image and text */
+     
+#Hint4{
+    position: absolute;
+    height: 800px;
+    top: 25em;
+    right:-7em;
+}
+
+#talk-to-us{
+    font-size: 120px;
+    position: absolute;
+    top: 14em;
+    left: 1em;
+    color: white;
+    -webkit-text-stroke: .01pc var(--Text-Color-y) ;
+    text-shadow:3px 3.5px black;
+}
+#talk-to-us-p{
+    position: absolute;
+    top: 63em;
+    color: black;
+    text-align: center;
+    background: rgb(250, 250, 236);
+    
+}
+
+/*Contact section */
+
+#Extra-section{
+    position: absolute;
+    top:420em;  
+}
+#Text-Our-essence{
+    background: rgb(250, 250, 236);
+    position: relative;
+    left: 20em;
+    width: 32em;
+    height: 350px;
+    border: thick #FFDF6C solid;
+}
+#Text-Our-essence p{
+    position: relative;
+    top: -3.2em;
+    font-size:30px ;
+    text-align: justify;
+    font-size: 26px;
+    line-height: 28px;
+    color: black;
+}
+#Text-Our-essence h1{
+    color: #FFDF6C;
+    font-size: 50px;
+    position: relative;
+    top: -0.55em;
+    left:1em;
+}
+#Text-Our-essence img{
+    position: absolute;
+    top: -50px;
+    left: 35em;
+    width: 40em;
+    height: 25em;
+    padding: 0px 0px;
+    border:thick wheat solid;
+}
+
+
+#Our-promise{
+    position: relative;
+    top: 35px;
+    left: 68.1em;
+    width: 32em;
+    height: 350px;
+    background: rgb(250, 250, 236);
+    border: thick #b4346a solid;
+}
+#Our-promise p{
+    position: relative;
+    top: -3em;
+    font-size:30px ;
+    text-align: justify;
+    font-size: 26px;
+    line-height: 28px;
+    color: black;
+}
+#Our-promise h1{
+    color: #b4346a;
+    font-size: 50px;
+    position: relative;
+    top: -.55em;
+    left:1.2em;
+}
+#Our-promise img{
+    padding: 0 0;
+    position: absolute;
+    top: 0em;
+    right: 35em;
+    width: 40em;
+    height: 25em;
+    border:thick wheat solid;
+}
+
+
+  address{
+      background-color: rgb(250, 250, 248);
+      border: thick brown solid ;
+      position: relative;
+      margin: 5em;
+      width: 35em;
+      height: 26em;
+      top: 100px;
+      left: 0em;
+  }  
+  address  p, h3{
+      position: relative;
+      top: -2em;
+      font-size: 30px;
+      margin: 1.35em;
+      line-height: 40px;
+  }
+  address h3{ /*Connect text*/
+      position: relative;
+      top: -4em;
+      left: -1em;
+  }
+  address a{
+      color: brown;
+  }
+  address a:hover{
+      color: burlywood;
+    }
+.Social-US1{
+    position: relative;
+    top: -18em;
+    display: inline-flex;
+    padding: 0em 0em;
+    height: 32px;
+    z-index: 1;
+
+
+}
+#LightsYN{
+    position: absolute;
+    top:-1.25em;
+    left: 35em; 
+    width: 75em;
+    height: 28em;
+}
+
+
+#last-word{
+    font-size: 95px;
+    text-transform: uppercase ;
+    position: absolute;
+    top: 81.9em;
+    left: 4em;
+  
+}
+#for-email1{
+    position: absolute;
+     top: 1.2em;
+     color: var(--Text-Color-y);  
+}
+#button-Last-div{
+    position: absolute;
+    top: 6em;
+    left: 190px;
+}
+.button-Last{  
+    right: 100px;
+    padding: 11px 30px ;
+    border-radius: 35px ;
+    background: #FFDF6C;
+    border: solid 3px;
+    
+}
+
+
+.button-Last :hover{
+    position: relative;
+    left:  .2em;
+    top: 0.2em;
+}
+.button-Last a{
+ font-size: 27px;
+ color: black;
+ font-weight: 600;
+}
+
+footer{
+    position: absolute;
+    top: 540em;
+    left: 0;
+}
+
+footer{
+    width: 100%;
+    height: 19em;
+    border: thick solid lightgray;
+    overflow-x: hidden;
+    overflow: hidden;
+    background: #c03d3d;
+
+}
+
+
+#p-footer  {
+    padding: 1 0 0;
+    color: var(--Text-Color-y); 
+    font-size: 28px;
+    font-weight: bolder;
+    position: relative;
+    left:10em;
+   
+} 
+.C-footer { /*Links*/
+    color: rgb(33, 168, 231);
+    text-decoration: none;
+}   
+
+#p-footer :hover{
+    color: rgb(250, 196, 96);
+    text-shadow: 3px 3.5px black;
+    font-size: 30px;
+    position: relative;
+    top: 10px;
+   
+}
+
+#Follow-us {
+    font-size: 19px;
+    transform: translate(35%, 0%);
+    color:var(--Text-Color-h1);
+}
+
+.Social-US { 
+    height: 95px;
+    position: relative;
+    top: -2em;
+    left: -9em;
+    
+}
+
+
+ #copy{
+    position: relative;
+    top:-45px;
+    left: 12px; 
+    color: gray;  
+}
+
+#powered{
+    position: relative;
+    top: -65px;
+    left: 6em;
+    color: gray;
+}
