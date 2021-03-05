@@ -549,7 +549,7 @@ top: 120em;
 .Post-img{
     position: relative;
     top: -40px;
-    left: 15px;
+    left: 0px;
 }
 
 .authors  {
@@ -567,6 +567,10 @@ top: 120em;
     margin-top: 5px;
     margin-bottom: 15px;
 
+}
+#User-2-Story-bottom > img {
+   width : 500px;
+   height: 350px;
 }
 
 .Stories-Active-bottom .date {
