@@ -189,10 +189,10 @@ nav :hover {
         z-index: 1;
 }
 
-#LOGIN-FORM1{   
+ #LOGIN-FORM1{   
     display: none;
 }  
- 
+
 
 #Logo-Gif{  /*Login animation Form*/
     height: 660px;
@@ -276,30 +276,24 @@ transform: scale(3deg -2% , -5%);
 #Forgot {
     font-size: 23.5px;
     position: relative;
-    top: 25px;
+    top: 11.2px;
     left: 100px;
-    color: black;
+    color: var(--Text-Color-p-y);
     font-weight: bold;
 }
 #signup-donot{
     font-size: 22px;
     position: relative;
-    top: -20px;
-    right: 25px;
-    width: 20em;
+    left: 20px; 
     font-weight: bold;
-
 }
 
 #signup-donot a{
-    color: black;
-    position: relative;
-    right: 22px;
+    color: var(--Text-Color-p-y);
 }
 #LOGIN-FORM1  a:hover{
     text-decoration: underline;
     position: relative;
-    right: 18px;
     color: rgb(29, 29, 145);
 }
 
@@ -555,7 +549,7 @@ top: 120em;
 .Post-img{
     position: relative;
     top: -40px;
-    left: 0px;
+    left: 15px;
 }
 
 .authors  {
@@ -573,10 +567,6 @@ top: 120em;
     margin-top: 5px;
     margin-bottom: 15px;
 
-}
-#User-2-Story-bottom > img {
-   width : 500px;
-   height: 350px;
 }
 
 .Stories-Active-bottom .date {
@@ -802,21 +792,23 @@ left: 16em;
     text-align: center;
     color: black;
     background: rgb(250, 250, 236);
- 
+
 }
 #Social-Follow-side-Fix { /*icons*/
     position: absolute;
-    z-index: 5;
     top: 21em;
     right: -7em;
     display: inline-flex;
 }
  #Social-Follow-side-Fix a{
     padding: 0em 0em 0em;
-    width: 120px;
+    width: 100px;
     height: 50px;
-    
-}  
+
+} 
+
+
+
 
     /* here is hint 4 image and text */
      
