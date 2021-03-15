@@ -368,6 +368,7 @@ font-weight:  bolder ;
        border-radius: 25px;
        border: 4px solid var(--Text-Color-g-h);
        padding: 5px;
+       z-index: 10;
    }
    
    
@@ -513,7 +514,7 @@ font-weight:  bolder ;
 #disabled-input{
     position: relative;
     top: -16.4em;
-    width: 550px;
+    width: 560px;
     height: 1px;
     font-size: 27px;
     right: -0.38em;
@@ -713,9 +714,9 @@ a {text-decoration: none;}
 .IMGHOVER{
        position: relative;
        left: 150px;
-       top: 100px;
+       top: 20px;
        width: 400px;
-       height: 480px;
+       height: 540px;
        border-radius: 40px;
    }
    .IMGHOVER:hover{
@@ -727,42 +728,42 @@ a {text-decoration: none;}
    .authors-Profile-picture{
        border: Var(--Text-Color-h1) solid 3.2px;
        border-radius: 50%;
-       width: 110px;
+       width: 120px;
        padding: 0px 0px ; /*this padding to fit the img inside the border / {To make the borders on the edgy of the image}*/
        position: relative;
-       top: -22.5em;
-       left: 32em; 
+       top: -23.5em;
+       left: 10em; 
    }
    
    .authors-profile-names{
        color: Var(--Text-Color-h1);
        font-size: 30px;
        position: relative;
-       top: -17.5em;
-       left: 14em;
+       top: -17em;
+       left: 23.2em;
    
    }
    
    .dateAndtime{
     font-size: 20px;
     position: relative;
-    top: -30em;
-    left: 6em;
+    top: -27.9em;
+    left: 34.5em;
    }
    
    .authors-Title{
        font-size: 40px;
        color: var(--Text-Color-y);
        position: relative;
-       top: -16.5em;
-       left: 10em;
+       top: -15em;
+       left: 16.2em;
    }
    
    .authors-profile-paragraphs{
        font-size: 21px;
        color: var(--Text-Color-h1);
        position: relative;
-       top: -32em;
+       top: -30.8em;
        left: 27em;
        text-align: center;
        width: 26em;     
